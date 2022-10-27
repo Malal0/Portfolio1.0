@@ -1,0 +1,93 @@
+.Contact-Section input {
+    font-family: inherit;
+}
+
+.Contact-Section h3 {
+    margin: 4em auto;
+    text-align: center;
+}
+
+.Contact-Section h3::after {
+    content: "LET' S TALK";
+    opacity: .3;
+    position: absolute;
+}
+
+.Contact-Section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact-Section .flex-c {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Contact-Section .flex-r {
+    display: flex;
+    justify-content: space-between;
+    gap: 12em;
+    margin-bottom: 9em;
+}
+
+.Contact-Section input {
+    background-color: var(--dim-white);
+    padding: 42px;
+    font-size: 24px;
+    color: var(--dark-grey);
+    outline: none;
+    border: 0;
+}
+
+.Contact-Section label {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.message-container {
+    height: 50vh;
+}
+
+.message {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    overflow-y: auto;
+    background-color: var(--dim-white);
+    color: var(--dark-grey);
+    font-family: inherit;
+    font-size: 24px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin-block: 7.5em;
+}
+
+.buttons-container .links {
+    display: flex;
+    gap: 2em;
+    position: absolute;
+    left: 0;
+    margin-left: 145px;
+}
+
+.buttons-container .links>*:hover {
+    filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.25));
+}
+
+.buttons-container button:hover {
+    background-color: #fff;
+    /* box-shadow: 0 0 50px rgba(255, 255, 255, 0.25); */
+    filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.25));
+}
+
+.Contact-Section textarea {
+    resize: none;
+    outline: none;
+    border: none;
+    color: var(--dark-grey);
+}

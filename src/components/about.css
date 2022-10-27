@@ -1,0 +1,27 @@
+.AboutMe-Section {
+    width: 46.0625em;
+    margin: auto;
+}
+
+.AboutMe-Section h3 {
+    text-align: center;
+    padding: 2em;
+}
+
+.AboutMe-Section .short-desc {
+    position: relative;
+}
+
+.AboutMe-Section .short-desc h3::after {
+    /* content: 'WHO AM I?';
+    background-color: #ffffff;
+    position: absolute;
+    z-index: -10; */
+    content: 'WHO AM I?';
+    position: absolute;
+    z-index: -10;
+    transform: scale(8);
+    opacity: .1;
+    width: 100%;
+    margin: auto;
+}

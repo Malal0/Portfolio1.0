@@ -1,0 +1,26 @@
+.Cursor-outer {
+    height: 3em;
+    aspect-ratio: 1;
+    border: 2px solid #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transition: 100ms;
+    z-index: 1010;
+}
+
+.Cursor-inner {
+    height: .5em;
+    background-color: #fff;
+    aspect-ratio: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    z-index: 1010;
+}
