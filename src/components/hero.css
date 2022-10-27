@@ -19,7 +19,7 @@
 }
 
 .navbar .logo {
-    height: 5.3125em;
+    height: 4em;
     width: auto;
     object-fit: contain;
 }
@@ -52,6 +52,10 @@ ul {
     display: grid;
     place-items: center;
     gap: 2em;
+}
+
+.hero-txt h1 {
+    text-align: center;
 }
 
 .hero-txt p {

@@ -117,10 +117,6 @@ function App() {
         variants={variants}
         animate={cursorInnerVariant}
       />
-      {/* <div className='nav-highlight-container'>
-        <img src={TopCorner} alt='topcorner' />
-        <img src={BottomCorner} alt='bottomcorner' />
-      </div> */}
     </div>
   )
 }
