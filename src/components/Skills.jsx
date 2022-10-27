@@ -37,10 +37,6 @@ function Skills() {
                     <img src={Figmalogo} alt="Figma logo" />
                     <p>figma</p>
                 </div>
-                <div className='skill'>
-                    <img src={Blenderlogo} alt="Blender logo" />
-                    <p>blender</p>
-                </div>
             </div>
         </div>
     )

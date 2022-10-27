@@ -100,7 +100,7 @@ function App() {
       />
       <Skills />
       <AboutMe />
-      <MyArtwork />
+      {/* <MyArtwork /> */}
       <Contact />
       <TopOfPageBtn
         handleMouseEnter={toTopEnter}
