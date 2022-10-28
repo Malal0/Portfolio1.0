@@ -118,6 +118,7 @@ function App() {
       <Hero
         handleMouseEnter={linkEnter}
         handleMouseLeave={linkLeave}
+        width={windowDimenion.winWidth}
       />
       <Projects
         handleMouseEnter={linkEnter}

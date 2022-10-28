@@ -9,13 +9,15 @@
 .navbar {
     position: fixed;
     width: 100%;
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
     height: 6em;
+    padding-inline: 8em; */
     top: 0;
-    padding-inline: 8em;
     z-index: 10;
+
+    padding-inline: 1em;
 }
 
 .navbar .logo {
@@ -32,6 +34,19 @@ ul {
     display: flex;
     gap: 48px;
     list-style-type: none;
+}
+
+.menu-btn {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.menu-svg {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
 }
 
 .hero-main {
