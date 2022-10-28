@@ -42,10 +42,10 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
   place-items: center;
   width: 100vw;
   overflow-x: hidden;
+  cursor: none;
 }
 
 h1 {
@@ -140,6 +140,7 @@ img {
   opacity: .5;
   z-index: 100;
   mix-blend-mode: difference;
+  pointer-events: none;
 }
 
 /* .lightmode {
