@@ -15,6 +15,7 @@ function Hero({ handleMouseEnter, handleMouseLeave }) {
     //         backgroundColor: 'black'
     //     }
     // }
+    const screenSize = window.screenSize;
 
     return (
         <div className="Hero-Section" >
@@ -23,9 +24,7 @@ function Hero({ handleMouseEnter, handleMouseLeave }) {
             // variants={variants}
             // animate={ }
             >
-                <div className='logo'>
-                    <a href='https://www.thisworldthesedays.com/easter-egg4.html' target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><img src={Logo} className="logo" alt="Logo" /></a>
-                </div>
+                <a className='logo' href='https://www.thisworldthesedays.com/easter-egg4.html' target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><img src={Logo} className="logo" alt="Logo" /></a>
                 <nav>
                     <ul>
                         <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>home</li></a>

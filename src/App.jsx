@@ -9,6 +9,7 @@ import Contact from './components/Contact'
 import TopOfPageBtn from './components/TopOfPageBtn'
 import './components/cursor.css'
 import './App.css'
+import ScreenSize from './components/ScreenSize'
 
 function App() {
   //cursor code here
@@ -88,6 +89,30 @@ function App() {
     SetTopBtnHover(false);
   }
 
+  //code for screen size
+
+  const [windowDimenion, detectHW] = useState({
+    winWidth: window.innerWidth,
+    winHeight: window.innerHeight,
+  })
+
+  const detectSize = () => {
+    detectHW({
+      winWidth: window.innerWidth,
+      winHeight: window.innerHeight,
+    })
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', detectSize)
+
+    return () => {
+      window.removeEventListener('resize', detectSize)
+    }
+  }, [windowDimenion])
+
+  //code for screen size
+
   return (
     <div className='App'>
       <Hero
@@ -116,6 +141,11 @@ function App() {
         className='Cursor-inner'
         variants={variants}
         animate={cursorInnerVariant}
+      />
+
+      <ScreenSize
+        width={windowDimenion.winWidth}
+        height={windowDimenion.winHeight}
       />
     </div>
   )
