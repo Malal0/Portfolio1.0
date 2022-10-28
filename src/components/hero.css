@@ -1,22 +1,17 @@
 .Hero-Section {
     height: 26em;
     width: 100%;
-
-    backdrop-filter: blur(10px);
 }
 
 .bg-Image {
     background-image: linear-gradient(rgb(0, 0, 0) 1%, rgba(0, 0, 0, 0.45), var(--dark-grey) 100%), url('../assets/images/bg.jpg');
     height: 100%;
     width: 100%;
-
     background-size: cover;
     background-position: center;
-    border: 1px solid blue;
 }
 
 .navbar {
-    border: 1px solid hsla(0, 0%, 100%, 0.1);
     position: fixed;
     width: 100%;
     display: flex;
@@ -72,7 +67,8 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 4.3125em auto;
+    padding: 4.3125em 0;
+    margin: 0 auto;
     /* margin: 10em; */
     gap: 1em;
     /* gap: 0.875em; */
