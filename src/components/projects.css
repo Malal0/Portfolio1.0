@@ -1,11 +1,14 @@
 .Projects-Section {
+    --logo-size: .875em;
+
     text-align: center;
     width: 100%;
 }
 
 .Projects-Section h3 {
     position: relative;
-    padding-top: 6.5em;
+    padding-top: 1.4375em;
+    /* padding-top: 6.5em; */
 }
 
 .Projects-Section h3::after {
@@ -19,10 +22,13 @@
 
 .project {
     position: relative;
-    height: 100vh;
+    height: 100%;
+    width: calc(100% - 1em);
+    /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-block: 2em;
 }
 
 .project-cta {
@@ -35,20 +41,25 @@
     z-index: 10;
     /* transform: translateX(-15em); */
     left: 0;
-    margin-left: 8.8125em;
+    margin-left: 1em;
+    /* margin-left: 8.8125em; */
 }
 
 .project-cta h2 {
     /* border: 1px solid green; */
     text-align: start;
-    margin-bottom: 5rem;
     padding: 0;
-    font-size: 8em;
+    margin-bottom: 1rem;
+    /* margin-bottom: 5rem; */
+    font-size: 1.5em;
+    /* font-size: 8em; */
 }
 
 .preview {
-    aspect-ratio: 16/9;
-    height: 48em;
+    aspect-ratio: 4/3;
+    /* aspect-ratio: 16/9; */
+    height: 10.5em;
+    /* height: 48em; */
     object-fit: cover;
     object-position: top;
     filter: brightness(.3);
@@ -59,16 +70,19 @@
     filter: brightness(.85);
 }
 
-.Projects-Section .logo {
-    height: 4.4375em;
-    aspect-ratio: 1;
-}
-
 .cta-links a {
-    margin-right: 2.5em;
+    height: var(--logo-size);
+    aspect-ratio: 1;
+    margin-right: .4375em;
+    /* margin-right: 2.5em; */
     filter: brightness(.8);
 }
 
 .cta-links a:hover {
     filter: brightness(1) drop-shadow(0 0 50px rgba(255, 255, 255, 0.25));
+}
+
+.logo-link {
+    height: var(--logo-size);
+    width: var(--logo-size);
 }
