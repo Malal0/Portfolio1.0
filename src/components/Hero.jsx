@@ -45,15 +45,15 @@ function Hero({ handleMouseEnter, handleMouseLeave, width }) {
                     <button class='menu-btn'>
                         <img class='menu-svg' src={MenuBtn} alt="menu button" />
                     </button>
-                    <nav>
+                    {/* <nav>
                         <ul>
                             <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>home</li></a>
                             <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>projects</li></a>
                             <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>about</li></a>
                             {/* <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>figma designs</li></a> */}
-                            <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>contact</li></a>
+                    {/*<a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>contact</li></a>
                         </ul>
-                    </nav>
+                    </nav> */}
                 </motion.div>
             }
             <div className='hero-main'>
