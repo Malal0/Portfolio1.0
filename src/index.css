@@ -99,7 +99,8 @@ img {
   position: fixed;
   bottom: 0;
   right: 0;
-  margin: 2em;
+  margin: 1em;
+  /* margin: 2em; */
   opacity: .1;
   transition: 300ms;
   z-index: 100;

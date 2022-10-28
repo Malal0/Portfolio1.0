@@ -14,22 +14,6 @@
     position: relative;
 }
 
-.AboutMe-Section .short-desc h3::after {
-    /* content: 'WHO AM I?';
-    background-color: #ffffff;
-    position: absolute;
-    z-index: -10; */
-    content: 'WHO AM I?';
-    position: absolute;
-    z-index: -10;
-    transform: scale(1);
-    /* transform: scale(8); */
-    opacity: .1;
-    /* width: 100%; */
-    margin: auto;
-}
-
-
 .AboutMe-Section ul,
 .AboutMe-Section p {
     font-size: 10px;
