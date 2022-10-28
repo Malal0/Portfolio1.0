@@ -1,21 +1,29 @@
+.Skills-Section {
+    width: 100vw;
+}
+
 .Skills-Section h3 {
     text-align: center;
-    padding-block: 100px;
+    padding-block: 30px;
+    font-size: 24px;
 }
 
 .skills-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 70px;
+    gap: 1em;
     justify-content: center;
     align-items: center;
-    padding-block: 70px;
+    /* padding-block: 70px; */
+    width: 100%;
 }
 
 .skill {
-    width: 19.3125em;
+    width: 5em;
+    /* width: 19.3125em; */
     aspect-ratio: 1;
-    border: 8px solid var(--dim-white);
+    border: 1px solid var(--dim-white);
+    /* border: 8px solid var(--dim-white); */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -23,12 +31,14 @@
 }
 
 .skill p {
-    font-size: 2.25em;
+    font-size: 9px;
+    /* font-size: 2.25em; */
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .skill img {
-    height: 11em;
+    height: 2.4em;
+    /* height: 11em; */
     aspect-ratio: 1;
 }

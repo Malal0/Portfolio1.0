@@ -1,14 +1,16 @@
 .Projects-Section {
-    --logo-size: .875em;
+    --logo-size: 2em;
+    /* --logo-size: .875em; */
 
     text-align: center;
-    width: 100%;
+    width: 100vw;
 }
 
 .Projects-Section h3 {
     position: relative;
     padding-top: 1.4375em;
     /* padding-top: 6.5em; */
+    font-size: 24px;
 }
 
 .Projects-Section h3::after {
@@ -23,12 +25,13 @@
 .project {
     position: relative;
     height: 100%;
-    width: calc(100% - 1em);
+    width: 100vw;
     /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
     margin-block: 2em;
+    background-color: crimson;
 }
 
 .project-cta {
@@ -73,7 +76,7 @@
 .cta-links a {
     height: var(--logo-size);
     aspect-ratio: 1;
-    margin-right: .4375em;
+    margin-right: 1.25em;
     /* margin-right: 2.5em; */
     filter: brightness(.8);
 }
@@ -86,3 +89,17 @@
     height: var(--logo-size);
     width: var(--logo-size);
 }
+
+/*  css for the odd childfren of the projects  */
+
+.Projects-Section> :nth-child(odd) .project-cta {
+    border: 1px solid red;
+}
+
+.Projects-Section> :nth-child(odd) .preview {
+    border: 1px solid yellow;
+    transform: translateX(-25%);
+    left: 0;
+}
+
+/*  css for the odd childfren of the projects  */

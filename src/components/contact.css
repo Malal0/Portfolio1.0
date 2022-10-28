@@ -1,9 +1,15 @@
+.Contact-Section {
+    width: 100vw;
+}
+
 .Contact-Section input {
     font-family: inherit;
 }
 
 .Contact-Section h3 {
-    margin: 4em auto;
+    font-size: 24px;
+    /* margin: 4em auto; */
+    padding-block: 30px;
     text-align: center;
 }
 
@@ -16,6 +22,7 @@
 .Contact-Section form {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .Contact-Section .flex-c {
@@ -27,14 +34,19 @@
 .Contact-Section .flex-r {
     display: flex;
     justify-content: space-between;
-    gap: 12em;
-    margin-bottom: 9em;
+    /* flex-flow: column; */
+    gap: 1.875em;
+    /* gap: 12em; */
+    margin-bottom: 1em;
+    /* margin-bottom: 9em; */
 }
 
 .Contact-Section input {
     background-color: var(--dim-white);
-    padding: 42px;
-    font-size: 24px;
+    padding: 5px 9px;
+    /* padding: 42px; */
+    font-size: 10px;
+    /* font-size: 24px; */
     color: var(--dark-grey);
     outline: none;
     border: 0;
@@ -42,7 +54,8 @@
 
 .Contact-Section label {
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 12px;
+    /* font-size: 2rem; */
 }
 
 .message-container {
@@ -52,12 +65,14 @@
 .message {
     width: 100%;
     height: 100%;
-    padding: 40px;
+    padding: 1em;
+    /* padding: 40px; */
     overflow-y: auto;
     background-color: var(--dim-white);
     color: var(--dark-grey);
     font-family: inherit;
-    font-size: 24px;
+    font-size: 10px;
+    /* font-size: 24px; */
 }
 
 .buttons-container {
@@ -69,10 +84,12 @@
 
 .buttons-container .links {
     display: flex;
-    gap: 2em;
+    gap: 1em;
+    /* gap: 2em; */
     position: absolute;
     left: 0;
-    margin-left: 145px;
+    margin-left: 1em;
+    /* margin-left: 145px; */
 }
 
 .buttons-container .links>*:hover {
@@ -85,9 +102,19 @@
     filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.25));
 }
 
+.buttons-container button {
+    font-size: 12px;
+    padding: 7px 18px;
+}
+
 .Contact-Section textarea {
     resize: none;
     outline: none;
     border: none;
     color: var(--dark-grey);
+}
+
+.links a {
+    height: 2em;
+    aspect-ratio: 1;
 }
