@@ -1,9 +1,18 @@
 .Hero-Section {
-    height: 90vh;
-    padding-top: 26px;
-    background-image: linear-gradient(rgb(0, 0, 0) 1%, rgba(0, 0, 0, 0.45), var(--dark-grey) 90%), url('../assets/images/bg.jpg');
+    height: 26em;
+    width: 100%;
+
+    backdrop-filter: blur(10px);
+}
+
+.bg-Image {
+    background-image: linear-gradient(rgb(0, 0, 0) 1%, rgba(0, 0, 0, 0.45), var(--dark-grey) 100%), url('../assets/images/bg.jpg');
+    height: 100%;
+    width: 100%;
+
     background-size: cover;
     background-position: center;
+    border: 1px solid blue;
 }
 
 .navbar {
@@ -63,27 +72,40 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10em;
-    gap: 0.875em;
+    margin: 4.3125em auto;
+    /* margin: 10em; */
+    gap: 1em;
+    /* gap: 0.875em; */
+
+    flex-flow: column;
+    width: 280px;
+    /* border: 1px solid white; */
 }
 
 .hero-main img {
     border-radius: 50%;
     aspect-ratio: 1;
-    height: 22.0625em;
+    height: 9.375em;
+    /* height: 22.0625em; */
 }
 
 .hero-txt {
     display: grid;
     place-items: center;
-    gap: 2em;
+    gap: 1em;
+    width: 100%;
+    /* gap: 2em; */
+    /* text-align: center; */
 }
 
 .hero-txt h1 {
     text-align: center;
+    font-size: 32px;
+    width: 100%;
 }
 
 .hero-txt p {
-    font-size: 2.25rem;
+    font-size: 20px;
+    /* font-size: 2.25rem; */
     font-style: italic;
 }

@@ -1,5 +1,6 @@
 .AboutMe-Section {
-    width: 46.0625em;
+    width: 100%;
+    /* width: 46.0625em; */
     margin: auto;
 }
 

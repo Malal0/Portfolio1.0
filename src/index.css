@@ -44,6 +44,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
+  width: 100%;
   max-width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
@@ -92,7 +93,8 @@ img {
 }
 
 .side-margin {
-  margin: 0 8.8125em;
+  margin: 0 1em;
+  /* margin: 0 8.8125em; */
 }
 
 .BackToTop {
@@ -124,6 +126,8 @@ img {
 
 .to-top-btn {
   height: 40px;
+  width: auto;
+  object-fit: contain;
 }
 
 .Screen-Size {

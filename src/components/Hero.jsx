@@ -19,48 +19,50 @@ function Hero({ handleMouseEnter, handleMouseLeave, width }) {
 
     return (
         <div className="Hero-Section" >
-            {width > 1020 ?
-                <motion.div
-                    className='navbar'
-                // variants={variants}
-                // animate={ }
-                >
-                    <a className='logo' href='https://www.thisworldthesedays.com/easter-egg4.html' target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><img src={Logo} className="logo" alt="Logo" /></a>
-                    <nav>
+            <div className='bg-Image'>
+                {width > 1020 ?
+                    <motion.div
+                        className='navbar'
+                    // variants={variants}
+                    // animate={ }
+                    >
+                        <a className='logo' href='https://www.thisworldthesedays.com/easter-egg4.html' target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><img src={Logo} className="logo" alt="Logo" /></a>
+                        <nav>
+                            <ul>
+                                <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>home</li></a>
+                                <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>projects</li></a>
+                                <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>about</li></a>
+                                {/* <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>figma designs</li></a> */}
+                                <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>contact</li></a>
+                            </ul>
+                        </nav>
+                    </motion.div> :
+                    <motion.div
+                        className='navbar'
+                    // variants={variants}
+                    // animate={ }
+                    >
+                        <a className='logo' href='https://www.thisworldthesedays.com/easter-egg4.html' target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><img src={Logo} className="logo" alt="Logo" /></a>
+                        <button class='menu-btn'>
+                            <img class='menu-svg' src={MenuBtn} alt="menu button" />
+                        </button>
+                        {/* <nav>
                         <ul>
                             <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>home</li></a>
                             <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>projects</li></a>
                             <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>about</li></a>
                             {/* <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>figma designs</li></a> */}
-                            <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>contact</li></a>
-                        </ul>
-                    </nav>
-                </motion.div> :
-                <motion.div
-                    className='navbar'
-                // variants={variants}
-                // animate={ }
-                >
-                    <a className='logo' href='https://www.thisworldthesedays.com/easter-egg4.html' target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><img src={Logo} className="logo" alt="Logo" /></a>
-                    <button class='menu-btn'>
-                        <img class='menu-svg' src={MenuBtn} alt="menu button" />
-                    </button>
-                    {/* <nav>
-                        <ul>
-                            <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>home</li></a>
-                            <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>projects</li></a>
-                            <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>about</li></a>
-                            {/* <a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>figma designs</li></a> */}
-                    {/*<a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>contact</li></a>
+                        {/*<a href='#' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><li>contact</li></a>
                         </ul>
                     </nav> */}
-                </motion.div>
-            }
-            <div className='hero-main'>
-                <img src={ProPic} alt="Picture of Dev" />
-                <div className='hero-txt'>
-                    <h1>Josué E. Martinez</h1>
-                    <p>web dev</p>
+                    </motion.div>
+                }
+                <div className='hero-main'>
+                    <img src={ProPic} alt="Picture of Dev" />
+                    <div className='hero-txt'>
+                        <h1>Joshua E. Martinez</h1>
+                        <p>web dev</p>
+                    </div>
                 </div>
             </div>
         </div >
