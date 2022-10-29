@@ -4,21 +4,6 @@ import LinkedinIcon from '../assets/images/linkedinlogo.svg'
 import './contact.css'
 
 function Contact() {
-    const name = document.getElementById('fullName');
-    const email = document.getElementById('email');
-    const message = document.getElementById('message');
-    const info = {
-        fullName: '',
-        email: '',
-        message: ''
-    }
-
-    const getMessage = () => {
-        console.log(name.value, email.value, message.value);
-        // name.value = '';
-        // email.value = '';
-        // message.value = '';
-    }
 
     return (
         <div className='Contact-Section'>
@@ -51,7 +36,7 @@ function Contact() {
                         <a href='https://github.com/Malal0' target='_blank'><img src={GithubIcon} className="logo-link" alt="Github link" /></a>
                         <a href='https://www.linkedin.com/in/josu%C3%A9-martinez-web-developer/' target='_blank'><img src={LinkedinIcon} className="logo-link" alt="LinkedIn link" /></a>
                     </div>
-                    <button onClick={getMessage} type="submit">send</button>
+                    <button type="submit">send</button>
                 </div>
             </form>
         </div>
