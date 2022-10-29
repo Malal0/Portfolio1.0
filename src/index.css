@@ -45,7 +45,7 @@ body {
   place-items: center;
   width: 100vw;
   overflow-x: hidden;
-  cursor: none;
+  /* cursor: none; */
 }
 
 h1 {
@@ -173,3 +173,9 @@ img {
     outline: 4px auto -webkit-focus-ring-color;
   }
 } */
+
+@media (min-width: 1020px) {
+  body {
+    cursor: none;
+  }
+}

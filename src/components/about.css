@@ -27,7 +27,7 @@
     flex-flow: column;
     align-items: flex-start;
     gap: 1em;
-    width: 50%;
+    width: fit-content;
     margin: auto;
     font-size: 10px;
 }

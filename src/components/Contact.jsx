@@ -23,33 +23,37 @@ function Contact() {
     return (
         <div className='Contact-Section'>
             <h3>contact me</h3>
-            <form action="josue_mar@protonmail.com"
+            <form
+                action="https://formsubmit.co/josue_mar@protonmail.com"
                 method="POST"
-                encType="multipart/form-data">
+            >
                 <div className='flex-r'>
                     <div className='flex-c'>
                         <label>full name</label>
-                        <input type='text' placeholder='YOUR NAME' id='fullName'></input>
+                        <input type='text' placeholder='Your Name' id='fullName' name="name" required></input>
                     </div>
                     <div className='flex-c'>
                         <label>email</label>
-                        <input type='email' placeholder='EMAIL' id='email' required></input>
+                        <input type='email' placeholder='Email' id='email' name="email" required></input>
                     </div>
                 </div>
                 <div className='flex-c'>
                     <label>message</label>
                     <div className='message-container'>
-                        <textarea className='message' placeholder='Hello Dev!' id='message'></textarea>
+                        <textarea className='message' placeholder='Hello Dev!' id='message' name='message'></textarea>
                     </div>
                 </div>
-            </form>
-            <div className='buttons-container'>
-                <div className='links'>
-                    <a href='https://github.com/Malal0' target='_blank'><img src={GithubIcon} className="logo-link" alt="Github link" /></a>
-                    <a href='https://www.linkedin.com/in/josu%C3%A9-martinez-web-developer/' target='_blank'><img src={LinkedinIcon} className="logo-link" alt="LinkedIn link" /></a>
+                <input type="hidden" name="_captcha" value="false"></input>
+                <input type="hidden" name="_next" value="https://joshuaemartinez.netlify.app/"></input>
+
+                <div className='buttons-container'>
+                    <div className='links'>
+                        <a href='https://github.com/Malal0' target='_blank'><img src={GithubIcon} className="logo-link" alt="Github link" /></a>
+                        <a href='https://www.linkedin.com/in/josu%C3%A9-martinez-web-developer/' target='_blank'><img src={LinkedinIcon} className="logo-link" alt="LinkedIn link" /></a>
+                    </div>
+                    <button onClick={getMessage} type="submit">send</button>
                 </div>
-                <button onClick={getMessage} type="submit" value="Submit">send</button>
-            </div>
+            </form>
         </div>
     )
 }
