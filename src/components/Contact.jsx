@@ -25,7 +25,7 @@ function Contact() {
             <h3>contact me</h3>
             <form action="josue_mar@protonmail.com"
                 method="POST"
-                enctype="multipart/form-data">
+                encType="multipart/form-data">
                 <div className='flex-r'>
                     <div className='flex-c'>
                         <label>full name</label>
@@ -48,9 +48,7 @@ function Contact() {
                     <a href='https://github.com/Malal0' target='_blank'><img src={GithubIcon} className="logo-link" alt="Github link" /></a>
                     <a href='https://www.linkedin.com/in/josu%C3%A9-martinez-web-developer/' target='_blank'><img src={LinkedinIcon} className="logo-link" alt="LinkedIn link" /></a>
                 </div>
-                {/* <div> */}
                 <button onClick={getMessage} type="submit" value="Submit">send</button>
-                {/* </div> */}
             </div>
         </div>
     )

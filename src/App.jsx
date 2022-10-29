@@ -133,16 +133,21 @@ function App() {
         handleMouseLeave={toTopLeave}
         icon={topBtnHover}
       />
-      <motion.div
-        className='Cursor-outer'
-        variants={variants}
-        animate={cursorOuterVariant}
-      />
-      <motion.div
-        className='Cursor-inner'
-        variants={variants}
-        animate={cursorInnerVariant}
-      />
+      {windowDimenion.winWidth > 1020 ?
+        <>
+          <motion.div
+            className='Cursor-outer'
+            variants={variants}
+            animate={cursorOuterVariant}
+          />
+          <motion.div
+            className='Cursor-inner'
+            variants={variants}
+            animate={cursorInnerVariant}
+          />
+        </> :
+        ""
+      }
 
       <ScreenSize
         width={windowDimenion.winWidth}

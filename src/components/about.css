@@ -14,15 +14,20 @@
     position: relative;
 }
 
-.AboutMe-Section ul,
+
 .AboutMe-Section p {
-    font-size: 10px;
-    width: 80%;
+    font-size: 11px;
+    line-height: 2em;
+    width: calc(100% - 2em);
     margin: auto;
 }
 
 .hobbies ul {
     display: flex;
     flex-flow: column;
-    align-items: center;
+    align-items: flex-start;
+    gap: 1em;
+    width: 50%;
+    margin: auto;
+    font-size: 10px;
 }

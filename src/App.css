@@ -35,10 +35,6 @@
   }
 } */
 
-body {
-  cursor: none;
-}
-
 .App {
   /* width: 100%; */
   width: 100vw;
