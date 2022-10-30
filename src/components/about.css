@@ -31,3 +31,39 @@
     margin: auto;
     font-size: 10px;
 }
+
+@media (min-width: 1020px) {
+    .AboutMe-Section {
+        /* width: 100vw; */
+        width: 46.0625em;
+        margin: auto;
+    }
+
+    .AboutMe-Section h3 {
+        text-align: center;
+        padding: 2em;
+        font-size: 36px;
+    }
+
+    .AboutMe-Section .short-desc {
+        position: relative;
+    }
+
+
+    .AboutMe-Section p {
+        font-size: 16px;
+        line-height: 2em;
+        width: 100%;
+        margin: auto;
+    }
+
+    .hobbies ul {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        gap: 1em;
+        width: fit-content;
+        margin: auto;
+        font-size: 16px;
+    }
+}
