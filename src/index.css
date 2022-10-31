@@ -178,4 +178,10 @@ img {
   body {
     cursor: none;
   }
+
+  .to-top-btn {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+  }
 }
