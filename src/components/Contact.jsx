@@ -1,6 +1,7 @@
 import React from 'react'
 import GithubIcon from '../assets/images/githubicon.svg'
 import LinkedinIcon from '../assets/images/linkedinlogo.svg'
+import PhoneIcon from '../assets/images/phoneicon.svg'
 import './contact.css'
 
 function Contact() {
@@ -35,6 +36,7 @@ function Contact() {
                     <div className='links'>
                         <a href='https://github.com/Malal0' target='_blank'><img src={GithubIcon} className="logo-link" alt="Github link" /></a>
                         <a href='https://www.linkedin.com/in/josu%C3%A9-martinez-web-developer/' target='_blank'><img src={LinkedinIcon} className="logo-link" alt="LinkedIn link" /></a>
+                        <a href='tel:+19037170495'><img src={PhoneIcon} className="logo-link" alt="Phone link" /></a>
                     </div>
                     <button type="submit">send</button>
                 </div>

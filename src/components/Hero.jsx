@@ -68,6 +68,7 @@ function Hero({ handleMouseEnter, handleMouseLeave, width }) {
                 </div >
             </div >
             <div className='scrolldown'>
+                <p>(scroll down)</p>
                 <img src={Arrow}></img>
             </div>
         </div >

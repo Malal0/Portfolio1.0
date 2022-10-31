@@ -96,11 +96,38 @@ ul {
     place-items: center;
 }
 
+.scrolldown p {
+    transform: translateY(-5em);
+    font-size: 8px;
+    opacity: .5;
+}
+
 .scrolldown img {
-    transform: rotate(180deg) translateY(2em);
-    border: 1px solid #ffffff50;
+    transform: rotate(180deg) translateY(2.5em);
     width: 2em;
     aspect-ratio: 1;
+    opacity: .5;
+    animation: 2s infinite downArrow;
+}
+
+@keyframes downArrow {
+    0% {
+        opacity: 0;
+        transform: rotate(180deg) translateY(2.5em) scale(.6);
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        transform: rotate(180deg) translateY(.25em) scale(1);
+        width: 2em;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 @media (min-width: 1020px) {
@@ -143,6 +170,8 @@ ul {
         font-size: 2.25rem;
     }
 
-    /* .scrolldown img {
-    } */
+    .scrolldown p {
+        transform: translateY(-4em);
+        font-size: 12px;
+    }
 }
