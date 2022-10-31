@@ -6,7 +6,7 @@ function AboutMe() {
         <div className='AboutMe-Section'>
             <div className='short-desc'>
                 <h3>who is Joshua E. Martinez?</h3>
-                <p>I am a first generation U.S. Citizen, the son of two immigrants. I am a part of the Otomi tribe. When I’m not learning something new, you can usually find me helping my family fix something in my their house, anything from the T.V. source to a brand new tile floor.</p>
+                <p>I am a first generation U.S. Citizen, the son of two immigrants. I am a part of the Otomi tribe. When I’m not learning something new, you can usually find me helping my family fix something in their house, anything from the T.V. source to a brand new tile floor.</p>
             </div>
             <div className='hobbies'>
                 <h3>my hobbies</h3>
