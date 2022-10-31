@@ -1,7 +1,4 @@
 .Projects-Section {
-    --logo-size: 2em;
-    /* --logo-size: .875em; */
-
     text-align: center;
     width: 100vw;
 }
@@ -9,7 +6,6 @@
 .Projects-Section h3 {
     position: relative;
     padding-top: 1.4375em;
-    /* padding-top: 6.5em; */
     font-size: 24px;
 }
 
@@ -17,7 +13,6 @@
     position: relative;
     height: 100%;
     width: 100vw;
-    /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,35 +20,27 @@
 }
 
 .project-cta {
-    /* border: 1px solid yellow; */
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     z-index: 10;
-    /* transform: translateX(-15em); */
     left: 0;
     margin-left: 1em;
-    /* margin-left: 8.8125em; */
 }
 
 .project-cta h2 {
-    /* border: 1px solid green; */
     text-align: start;
     padding: 0;
     margin-bottom: 1rem;
-    /* margin-bottom: 5rem; */
     font-size: 1.5em;
-    /* font-size: 8em; */
 }
 
 .preview {
     aspect-ratio: 4/3;
-    /* aspect-ratio: 16/9; */
     width: 75vw;
     margin-left: 25vw;
-    /* height: 48em; */
     object-fit: cover;
     object-position: top;
     filter: brightness(.3);
@@ -67,17 +54,11 @@
     height: var(--logo-size);
     aspect-ratio: 1;
     margin-right: 1.25em;
-    /* margin-right: 2.5em; */
     filter: brightness(.8);
 }
 
 .cta-links a:hover {
     filter: brightness(1) drop-shadow(0 0 50px rgba(255, 255, 255, 0.25));
-}
-
-.logo-link {
-    height: var(--logo-size);
-    width: var(--logo-size);
 }
 
 /*  css for the odd childfren of the projects  */
@@ -103,33 +84,22 @@
 /*  css for the odd childfren of the projects  */
 
 @media (min-width: 1020px) {
-    .Projects-Section {
-        --logo-size: 4em;
-    }
-
     .Projects-Section h3 {
-        /* padding-top: 1.4375em; */
         padding-top: 6.5em;
         font-size: 36px;
     }
 
     .project {
-        /* height: 100%; */
         height: 100vh;
         margin-block: 2em;
     }
 
     .project-cta {
-        /* border: 1px solid yellow; */
-        /* transform: translateX(-15em); */
-        /* margin-left: 1em; */
         margin-left: 8.8125em;
     }
 
     .project-cta h2 {
-        /* border: 1px solid green; */
         margin-bottom: 1rem;
-        /* margin-bottom: 5rem; */
         font-size: 8em;
     }
 
@@ -141,7 +111,6 @@
     }
 
     .cta-links a {
-        height: var(--logo-size);
         margin-right: 2.5em;
     }
 

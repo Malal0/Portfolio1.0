@@ -1,6 +1,5 @@
 .AboutMe-Section {
     width: 100vw;
-    /* width: 46.0625em; */
     margin: auto;
 }
 
@@ -34,7 +33,6 @@
 
 @media (min-width: 1020px) {
     .AboutMe-Section {
-        /* width: 100vw; */
         width: 46.0625em;
         margin: auto;
     }

@@ -24,6 +24,8 @@
   --dim-white: #d9d9d9;
   --dark-grey: #0e0e0e;
   --hover: #ffffff;
+
+  --logo-size: 2em;
 }
 
 a {
@@ -81,17 +83,12 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-button:hover {
-  cursor: none;
-}
-
 img {
   max-width: 100%;
 }
 
 .side-margin {
   margin: 0 1em;
-  /* margin: 0 8.8125em; */
 }
 
 .BackToTop {
@@ -99,7 +96,6 @@ img {
   bottom: 0;
   right: 0;
   margin: 1em;
-  /* margin: 2em; */
   opacity: .1;
   transition: 300ms;
   z-index: 100;
@@ -142,6 +138,11 @@ img {
   pointer-events: none;
 }
 
+.logo-link {
+  aspect-ratio: 1;
+  width: var(--logo-size);
+}
+
 /* .lightmode {
   :root {
     color: var(--dark-grey);
@@ -174,6 +175,10 @@ img {
 } */
 
 @media (min-width: 1020px) {
+  :root {
+    --logo-size: 4em;
+  }
+
   body {
     cursor: none;
   }
@@ -182,5 +187,9 @@ img {
     height: 50px;
     width: auto;
     object-fit: contain;
+  }
+
+  button {
+    cursor: none;
   }
 }

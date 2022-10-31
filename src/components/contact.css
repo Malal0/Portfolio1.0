@@ -8,7 +8,6 @@
 
 .Contact-Section h3 {
     font-size: 24px;
-    /* margin: 4em auto; */
     padding-block: 30px;
     text-align: center;
 }
@@ -28,19 +27,14 @@
 .Contact-Section .flex-r {
     display: flex;
     justify-content: space-between;
-    /* flex-flow: column; */
     gap: 1.875em;
-    /* gap: 12em; */
     margin-bottom: 1em;
-    /* margin-bottom: 9em; */
 }
 
 .Contact-Section input {
     background-color: var(--dim-white);
     padding: 5px 9px;
-    /* padding: 42px; */
     font-size: 10px;
-    /* font-size: 24px; */
     color: var(--dark-grey);
     outline: none;
     border: 0;
@@ -49,7 +43,6 @@
 .Contact-Section label {
     text-transform: uppercase;
     font-size: 12px;
-    /* font-size: 2rem; */
 }
 
 .message-container {
@@ -60,31 +53,27 @@
     width: 100%;
     height: 100%;
     padding: 1em;
-    /* padding: 40px; */
     overflow-y: auto;
     background-color: var(--dim-white);
     color: var(--dark-grey);
     font-family: inherit;
     font-size: 10px;
-    /* font-size: 24px; */
 }
 
 .buttons-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     place-items: center;
     margin-block: 26px;
-    /* margin-block: 7.5em; */
 }
 
 .buttons-container .links {
     display: flex;
-    gap: 1em;
-    /* gap: 2em; */
-    position: absolute;
-    left: 0;
-    margin-left: 1em;
-    /* margin-left: 145px; */
+    justify-content: space-evenly;
+    gap: .2em;
+    grid-column: 1;
+    width: 100%;
+    margin-left: .5em;
 }
 
 .buttons-container .links>*:hover {
@@ -93,13 +82,13 @@
 
 .buttons-container button:hover {
     background-color: #fff;
-    /* box-shadow: 0 0 50px rgba(255, 255, 255, 0.25); */
     filter: drop-shadow(0 0 50px rgba(255, 255, 255, 0.25));
 }
 
 .buttons-container button {
     font-size: 12px;
     padding: 7px 18px;
+    grid-column: 2;
 }
 
 .Contact-Section textarea {
@@ -110,18 +99,13 @@
 }
 
 .links a {
-    height: 2em;
+    height: var(--logo-size);
     aspect-ratio: 1;
 }
 
 @media (min-width: 1020px) {
-    /* .Contact-Section {
-        width: 100vw;
-    } */
-
     .Contact-Section h3 {
         font-size: 36px;
-        /* margin: 4em auto; */
         padding-block: 30px;
     }
 
@@ -153,8 +137,8 @@
     }
 
     .buttons-container .links {
-        gap: 2em;
-        margin-left: 145px;
+        margin-left: 0;
+        gap: clamp(2em, 20%, 3em);
     }
 
     .buttons-container button {
@@ -163,6 +147,6 @@
     }
 
     .links a {
-        height: 4em;
+        height: var(--logo-size);
     }
 }
