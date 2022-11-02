@@ -103,6 +103,38 @@
     aspect-ratio: 1;
 }
 
+@media (min-width: 481px) {
+    .Contact-Section input {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .Contact-Section label {
+        font-size: 1.2rem;
+    }
+
+    .message-container {
+        height: 40vh;
+    }
+
+    .message {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .buttons-container button {
+        font-size: 14px;
+        padding: 22px 55px;
+    }
+}
+
+@media (min-width: 769px) {
+    .buttons-container .links {
+        margin-left: 0;
+        gap: clamp(1em, 20%, 1.5em);
+    }
+}
+
 @media (min-width: 1020px) {
     .Contact-Section h3 {
         font-size: 36px;

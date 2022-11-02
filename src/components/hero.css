@@ -4,11 +4,27 @@
 }
 
 .bg-Image {
-    background-image: linear-gradient(rgb(0, 0, 0) 1%, rgba(0, 0, 0, 0.45), var(--dark-grey) 100%), url('../assets/images/bg.jpg');
+    --image: url('../assets/images/bg-smartphone-blur4.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.3), var(--dark-grey) 100%), var(--image);
     height: 100%;
     width: 100%;
     background-size: cover;
     background-position: center;
+    animation: zoomOut 5s;
+}
+
+@keyframes zoomOut {
+    0% {
+        background-size: 200%;
+    }
+
+    99% {
+        background-size: 100%;
+    }
+
+    100% {
+        background-size: cover;
+    }
 }
 
 .navbar {
@@ -63,6 +79,17 @@ ul {
     flex-flow: column;
     width: 280px;
     height: 100%;
+    animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .hero-main img {
@@ -129,9 +156,25 @@ ul {
     }
 }
 
+@media (min-width: 481px) {
+    .bg-Image {
+        --image: url('../assets/images/bg-tablet-blur5.jpg');
+    }
+}
+
+@media (min-width: 769px) {
+    .bg-Image {
+        --image: url('../assets/images/bg-laptop-blur16.jpg');
+    }
+}
+
 @media (min-width: 1020px) {
     .Hero-Section {
         height: 43.75em;
+    }
+
+    .bg-Image {
+        --image: url('../assets/images/bg-blur50.jpg');
     }
 
     .navbar {

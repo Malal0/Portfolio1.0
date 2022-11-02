@@ -31,37 +31,43 @@
     font-size: 10px;
 }
 
-@media (min-width: 1020px) {
-    .AboutMe-Section {
-        width: 46.0625em;
-        margin: auto;
+@media (min-width: 481px) {
+    .AboutMe-Section p {
+        font-size: 13px;
     }
 
+    .hobbies ul {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 769px) {
+    .AboutMe-Section {
+        width: 46.0625em;
+    }
+
+    .AboutMe-Section p {
+        font-size: 14.5px;
+    }
+
+    .hobbies ul {
+        font-size: 14.5px;
+    }
+}
+
+@media (min-width: 1020px) {
     .AboutMe-Section h3 {
-        text-align: center;
         padding: 2em;
         font-size: 36px;
     }
 
-    .AboutMe-Section .short-desc {
-        position: relative;
-    }
-
-
     .AboutMe-Section p {
         font-size: 16px;
-        line-height: 2em;
         width: 100%;
-        margin: auto;
     }
 
     .hobbies ul {
-        display: flex;
-        flex-flow: column;
-        align-items: flex-start;
         gap: 1em;
-        width: fit-content;
-        margin: auto;
         font-size: 16px;
     }
 }

@@ -34,7 +34,7 @@
     text-align: start;
     padding: 0;
     margin-bottom: 1rem;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .preview {
@@ -83,6 +83,18 @@
 }
 
 /*  css for the odd childfren of the projects  */
+
+@media (min-width: 481px) {
+    .project-cta h2 {
+        font-size: 3.5em;
+    }
+}
+
+@media (min-width: 769px) {
+    .project-cta h2 {
+        font-size: 5.5em;
+    }
+}
 
 @media (min-width: 1020px) {
     .Projects-Section h3 {
