@@ -35,7 +35,6 @@
 
 .art-ex-container .first {
     background: linear-gradient(16.8deg, rgba(111, 197, 114, 0.5) 3.5%, rgba(102, 133, 134, 0.5) 100%), url(../assets/images/lockssketch.jpg);
-    /* background-image: url(../assets/images/IMG_20220715_0001.jpg); */
     background-size: cover;
     background-position: 97%;
     transition: .5s;
@@ -43,7 +42,6 @@
 
 .art-ex-container .first:hover {
     background: linear-gradient(-16.8deg, rgba(111, 197, 114, 0.5) 3.5%, rgba(102, 133, 134, 0.5) 100%), url(../assets/images/lockssketch.jpg);
-    /* background-image: url(../assets/images/IMG_20220715_0001.jpg); */
     background-size: cover;
     background-position: 97%;
 }
