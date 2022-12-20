@@ -39,7 +39,6 @@ a {
 a:hover {
   color: var(--hover);
   font-weight: 700;
-  cursor: none;
 }
 
 body {
