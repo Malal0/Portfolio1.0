@@ -2,31 +2,38 @@ import React from 'react'
 import GithubIcon from '../assets/images/githubicon.svg'
 import WeblinkIcon from '../assets/images/weblinkicon.svg'
 import LoteriaPreview from '../assets/images/loteriaprev.png'
-import FauxgymPreview from '../assets/images/FauxGymDesktopView.png'
+// import FauxgymPreview from '../assets/images/FauxGymDesktopView.png'
 import PasswordgeneratorPreview from '../assets/images/passwordgeneratorprev.png'
+import RegisterCountPreview from '../assets/images/registercountprev.png'
 import './projects.css'
 
 function Projects({ handleMouseEnter, handleMouseLeave }) {
 
     const projectsArr = [
+        // {
+        //     name: 'faux gym',
+        //     image: FauxgymPreview,
+        //     githublink: 'https://github.com/Malal0/Faux-Gym',
+        //     url: 'https://faux-gym.netlify.app/'
+        // },
+        {
+            name: 'the best password generator',
+            image: PasswordgeneratorPreview,
+            githublink: 'https://github.com/Malal0/PasswordGenerator',
+            url: 'https://bestpasswordgenerator.netlify.app/'
+        },
+        {
+            name: 'Register Count',
+            image: RegisterCountPreview,
+            githublink: 'https://github.com/Malal0/Register-Count',
+            url: 'https://registercount.netlify.app/'
+        },
         {
             name: 'loteria online',
             image: LoteriaPreview,
             githublink: 'https://github.com/Malal0/Loteria',
             url: 'https://loteria-card-generator.netlify.app/'
         },
-        {
-            name: 'faux gym',
-            image: FauxgymPreview,
-            githublink: 'https://github.com/Malal0/Faux-Gym',
-            url: 'https://faux-gym.netlify.app/'
-        },
-        {
-            name: 'the best password generator',
-            image: PasswordgeneratorPreview,
-            githublink: 'https://github.com/Malal0/PasswordGenerator',
-            url: 'https://bestpasswordgenerator.netlify.app/'
-        }
 
     ]
 
