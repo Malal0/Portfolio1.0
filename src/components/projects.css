@@ -83,6 +83,10 @@
     margin-left: 1.25em;
 }
 
+.bordered {
+    border: 1px solid red;
+}
+
 /*  css for the odd childfren of the projects  */
 
 @media (min-width: 481px) {

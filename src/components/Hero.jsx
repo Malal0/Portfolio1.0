@@ -63,7 +63,7 @@ function Hero({ handleMouseEnter, handleMouseLeave, width }) {
                     <img src={ProPic} alt="Picture of Dev" />
                     <div className='hero-txt'>
                         <h1>Joshua E. Martinez</h1>
-                        <p>Web Developer</p>
+                        <p>Frontend Developer</p>
                     </div>
                 </div >
             </div >

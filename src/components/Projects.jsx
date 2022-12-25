@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import GithubIcon from '../assets/images/githubicon.svg'
 import WeblinkIcon from '../assets/images/weblinkicon.svg'
 import LoteriaPreview from '../assets/images/loteriaprev.png'
@@ -52,9 +52,22 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
         )
     })
 
-    // const images = document.querySelectorAll('.preview');
+    const images = document.querySelectorAll('.preview');
 
-    // images.forEach((image) => image.addEventListener('mouseover', console.log(this)))
+    function handleImageHover(e) {
+        console.log(e.target.classList.add('bordered'))
+        console.log(e.target.classList)
+    }
+
+    function handleImageHoverExit(e) {
+        console.log(e.target.classList.remove('bordered'))
+        console.log(e.target.classList)
+    }
+
+    useEffect(() => {
+        images.forEach((image) => image.addEventListener('mouseenter', handleImageHover))
+        images.forEach((image) => image.addEventListener('mouseleave', handleImageHoverExit))
+    }, []);
 
     return (
         <div className='Projects-Section'>
