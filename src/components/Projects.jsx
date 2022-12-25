@@ -52,6 +52,10 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
         )
     })
 
+    // const images = document.querySelectorAll('.preview');
+
+    // images.forEach((image) => image.addEventListener('mouseover', console.log(this)))
+
     return (
         <div className='Projects-Section'>
             <h3>projects</h3>
