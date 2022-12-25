@@ -55,12 +55,12 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
     const images = document.querySelectorAll('.preview');
 
     function handleImageHover(e) {
-        console.log(e.target.classList.add('bordered'))
+        e.target.classList.add('bordered')
         console.log(e.target.classList)
     }
 
     function handleImageHoverExit(e) {
-        console.log(e.target.classList.remove('bordered'))
+        e.target.classList.remove('bordered')
         console.log(e.target.classList)
     }
 
