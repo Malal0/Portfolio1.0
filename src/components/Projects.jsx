@@ -39,7 +39,7 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
 
     const projects = projectsArr.map(item => {
         return (
-            <div className='project'>
+            <div className='project' key={projectsArr.indexOf(item)}>
                 <div className='project-cta'>
                     <h2>{item.name}</h2>
                     <div className='cta-links'>
@@ -54,19 +54,19 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
 
     const images = document.querySelectorAll('.preview');
 
-    function handleImageHover(e) {
+    function handleImageEnter(e) {
         e.target.classList.add('bordered')
         console.log(e.target.classList)
     }
 
-    function handleImageHoverExit(e) {
+    function handleImageLeave(e) {
         e.target.classList.remove('bordered')
         console.log(e.target.classList)
     }
 
     useEffect(() => {
-        images.forEach((image) => image.addEventListener('mouseenter', handleImageHover))
-        images.forEach((image) => image.addEventListener('mouseleave', handleImageHoverExit))
+        images.forEach((image) => image.addEventListener('mouseenter', handleImageEnter))
+        images.forEach((image) => image.addEventListener('mouseleave', handleImageLeave))
     }, []);
 
     return (
