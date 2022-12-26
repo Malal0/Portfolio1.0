@@ -91,6 +91,7 @@
     .skill {
         width: 19.3125em;
         border: 8px solid var(--dim-white);
+        scale: .75;
     }
 
     .skill p {
