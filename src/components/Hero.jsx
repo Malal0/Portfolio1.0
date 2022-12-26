@@ -57,7 +57,7 @@ function Hero({ handleMouseEnter, handleMouseLeave, width }) {
     // }
 
     return (
-        <div className="Hero-Section" >
+        <div className="Hero-Section" id="hero-section">
             <div className='bg-Image'>
                 <div className='hero-main' >
                     <img src={ProPic} alt="Picture of Dev" />
