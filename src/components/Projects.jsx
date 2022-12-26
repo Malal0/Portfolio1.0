@@ -55,18 +55,18 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
     const images = document.querySelectorAll('.preview');
 
     function handleImageEnter(e) {
-        e.target.classList.add('bordered')
-        console.log(e.target.classList)
+        e.target.previousSibling.firstChild.classList.add('bordered')
+        console.log(e.target.previousSibling.firstChild.classList)
     }
 
     function handleImageLeave(e) {
-        e.target.classList.remove('bordered')
-        console.log(e.target.classList)
+        e.target.previousSibling.firstChild.classList.remove('bordered')
+        console.log('left')
     }
 
     useEffect(() => {
-        images.forEach((image) => image.addEventListener('mouseenter', handleImageEnter))
-        images.forEach((image) => image.addEventListener('mouseleave', handleImageLeave))
+        images.forEach((image) => image.addEventListener('mouseenter', handleImageEnter));
+        images.forEach((image) => image.addEventListener('mouseleave', handleImageLeave));
     }, []);
 
     return (
