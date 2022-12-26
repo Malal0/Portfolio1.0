@@ -17,7 +17,7 @@
 .AboutMe-Section p {
     font-size: 11px;
     line-height: 2em;
-    width: calc(100% - 2em);
+    width: calc(100% - 12em);
     margin: auto;
 }
 

@@ -1,8 +1,9 @@
 import React from 'react'
-import { motion } from 'framer-motion'
-import Logo from '../assets/images/JEM-Logo.svg'
-import ProPic from '../assets/images/ProfilePic.png'
-import MenuBtn from '../assets/images/Menu-btn-alt.svg'
+// import { motion } from 'framer-motion'
+// import Logo from '../assets/images/JEM-Logo.svg'
+// import ProPic from '../assets/images/ProfilePic.png'
+import ProPic from '../assets/images/avatarbw.png'
+// import MenuBtn from '../assets/images/Menu-btn-alt.svg'
 import Arrow from '../assets/images/Arrow.svg'
 import './hero.css'
 
