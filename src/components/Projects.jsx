@@ -56,12 +56,12 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
 
     function handleImageEnter(e) {
         e.target.previousSibling.firstChild.classList.add('bordered')
-        console.log(e.target.previousSibling.firstChild.classList)
+        e.target.previousSibling.lastChild.classList.add('bordered')
     }
 
     function handleImageLeave(e) {
         e.target.previousSibling.firstChild.classList.remove('bordered')
-        console.log('left')
+        e.target.previousSibling.lastChild.classList.remove('bordered')
     }
 
     useEffect(() => {
