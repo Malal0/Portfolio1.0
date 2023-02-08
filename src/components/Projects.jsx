@@ -5,7 +5,7 @@ import LoteriaPreview from '../assets/images/loteriaprev.png'
 // import FauxgymPreview from '../assets/images/FauxGymDesktopView.png'
 import PasswordgeneratorPreview from '../assets/images/passwordgeneratorprev.png'
 import RegisterCountPreview from '../assets/images/registercountprev.png'
-import './projectss.css'
+import './projects.css'
 
 function Projects({ handleMouseEnter, handleMouseLeave }) {
 
@@ -37,21 +37,17 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
 
     ]
 
-    const styles = { color: 'red' };
-
     const projects = projectsArr.map(item => {
         return (
             <div className='project' key={projectsArr.indexOf(item)} style={{ backgroundImage: `url(${item.image})` }}>
-                <div className='blur-layer'>
-                    <div className='project-cta'>
-                        <h2>{item.name}</h2>
-                        <div className='cta-links'>
-                            <a href={item.githublink} target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><img src={GithubIcon} className="logo-link" alt="Github link" /></a>
-                            <a href={item.url} target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><img src={WeblinkIcon} className="logo-link" alt="Website link" /></a>
-                        </div>
-                        <p>Stack: HTML5, CSS, Sass, Javascript, ES6</p>
-                    </div>
+                <div className='project-content-container'>
                     <img src={item.image} className="preview" alt={`${item.name} preview`} />
+                    <h2>{item.name}</h2>
+                    <div className='project-links'>
+                        <a href={item.githublink} target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><img src={GithubIcon} className="logo-link" alt="Github link" /></a>
+                        <a href={item.url} target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}><img src={WeblinkIcon} className="logo-link" alt="Website link" /></a>
+                    </div>
+                    <p>Stack: HTML5, CSS, Sass, Javascript, ES6</p>
                 </div >
             </div>
         )

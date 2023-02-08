@@ -1,106 +1,49 @@
 .Projects-Section {
-    text-align: center;
-    width: 100vw;
+    min-height: 100vh;
+    margin-block: 3em;
 }
 
-.Projects-Section h3 {
-    position: relative;
-    padding-top: 1.4375em;
-    font-size: 24px;
+.Projects-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 2em;
 }
 
 .project {
-    position: relative;
-    height: 100%;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-block: 2em;
+    background-color: transparent;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+    width: clamp(220px, 85%, 520px);
 }
 
-.project-cta {
-    position: absolute;
+.project-content-container {
+    background-color: hsl(0, 0%, 5%, .5);
+    backdrop-filter: blur(15px);
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
     flex-direction: column;
-    z-index: 10;
-    left: 0;
-    margin-left: 1em;
-    pointer-events: none;
-}
-
-.project-cta h2 {
-    text-align: start;
-    padding: 0;
-    margin-bottom: 1rem;
-    font-size: 2em;
-    max-width: 8ch;
-
-    text-shadow: 0 0 10px;
-    color: hsl(0, 0%, 95%, .75);
-    mix-blend-mode: difference;
+    gap: 2em;
+    padding: 1.5em;
+    padding: 2em;
 }
 
 .preview {
-    aspect-ratio: 4/3;
-    width: 75vw;
-    margin-left: 25vw;
+    aspect-ratio: 1.5;
     object-fit: cover;
-    object-position: top;
-    filter: brightness(.5);
 }
 
-.preview:hover {
-    filter: brightness(.85);
+.project-content-container h2 {
+    font-size: 3rem;
 }
 
-.cta-links a {
-    display: inline-block;
-    height: var(--logo-size);
-    aspect-ratio: 1;
-    margin-right: 1.25em;
-    filter: brightness(.8);
-    pointer-events: all;
+.project-content-container .project-links {
+    display: flex;
+    justify-content: space-evenly;
 }
-
-.cta-links a:hover {
-    filter: brightness(1) drop-shadow(0 0 50px rgba(255, 255, 255, 0.25));
-}
-
-/*  css for the odd childfren of the projects  */
-
-.Projects-Section> :nth-child(odd) .preview {
-    margin-left: 0;
-    margin-right: 25vw;
-}
-
-.Projects-Section> :nth-child(odd) .project-cta {
-    align-items: flex-end;
-    left: auto;
-    right: 0;
-    margin-left: 0;
-    margin-right: 1em;
-}
-
-.Projects-Section> :nth-child(odd) .cta-links a {
-    margin-right: 0;
-    margin-left: 1.25em;
-}
-
-.Projects-Section> :nth-child(odd) .project-cta h2 {
-    text-align: end;
-}
-
-.bordered {
-    color: hsl(0, 0%, 100%);
-    /* background-color: hsl(0, 0%, 0%, .50); */
-    /* backdrop-filter: blur(20px); */
-    filter: drop-shadow(1px 1px 10px black);
-}
-
-/*  css for the odd childfren of the projects  */
 
 @media (min-width: 481px) {
     .project-cta h2 {
