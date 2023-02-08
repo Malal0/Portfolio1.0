@@ -37,6 +37,10 @@
     margin-bottom: 1rem;
     font-size: 2em;
     max-width: 8ch;
+
+    text-shadow: 0 0 10px;
+    color: hsl(0, 0%, 95%, .75);
+    mix-blend-mode: difference;
 }
 
 .preview {
