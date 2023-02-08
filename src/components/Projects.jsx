@@ -1,20 +1,31 @@
 import React, { useEffect } from 'react'
 import GithubIcon from '../assets/images/githubicon.svg'
 import WeblinkIcon from '../assets/images/weblinkicon.svg'
-import LoteriaPreview from '../assets/images/loteriaprev.png'
-// import FauxgymPreview from '../assets/images/FauxGymDesktopView.png'
-import PasswordgeneratorPreview from '../assets/images/passwordgeneratorprev.png'
-import RegisterCountPreview from '../assets/images/registercountprev.png'
+import InvoiceCreatorPreview from '../assets/images/invoicecreator.png'
+import PasswordgeneratorPreview from '../assets/images/passwordgenerator.png'
+import RegisterCountPreview from '../assets/images/registercount.png'
 import './projects.css'
 
 function Projects({ handleMouseEnter, handleMouseLeave }) {
 
     const projectsArr = [
         // {
-        //     name: 'faux gym',
-        //     image: FauxgymPreview,
-        //     githublink: 'https://github.com/Malal0/Faux-Gym',
-        //     url: 'https://faux-gym.netlify.app/'
+        //     name: 'the best password generator',
+        //     image: PasswordgeneratorPreview,
+        //     githublink: 'https://github.com/Malal0/PasswordGenerator',
+        //     url: 'https://bestpasswordgenerator.netlify.app/'
+        // },
+        // {
+        //     name: 'Register Count',
+        //     image: RegisterCountPreview,
+        //     githublink: 'https://github.com/Malal0/Register-Count',
+        //     url: 'https://registercount.netlify.app/'
+        // },
+        // {
+        //     name: 'loteria online',
+        //     image: LoteriaPreview,
+        //     githublink: 'https://github.com/Malal0/Loteria',
+        //     url: 'https://loteria-card-generator.netlify.app/'
         // },
         {
             name: 'the best password generator',
@@ -29,12 +40,11 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
             url: 'https://registercount.netlify.app/'
         },
         {
-            name: 'loteria online',
-            image: LoteriaPreview,
-            githublink: 'https://github.com/Malal0/Loteria',
-            url: 'https://loteria-card-generator.netlify.app/'
-        },
-
+            name: 'invoice creator',
+            image: InvoiceCreatorPreview,
+            githublink: 'https://github.com/Malal0/Invoice-Creator',
+            url: 'https://invoicecreatorsoloproject.netlify.app/'
+        }
     ]
 
     const projects = projectsArr.map(item => {
