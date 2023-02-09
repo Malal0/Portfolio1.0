@@ -47,61 +47,51 @@
 }
 
 @media (min-width: 481px) {
-    .project-cta h2 {
-        font-size: 3.5em;
+    .Projects-Section {
+        background-color: red;
     }
 }
 
 @media (min-width: 769px) {
-    .project-cta h2 {
-        font-size: 5.5em;
+    .Projects-Section {
+        background-color: orange;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .project-content-container {
+        display: grid;
+        grid-template-columns: minmax(300px, 1fr) auto;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .project-content-container h2,
+    .project-links,
+    .project-content-container p {
+        grid-column: 1;
+    }
+
+    .project-content-container h2 {
+        align-self: center;
+        font-size: 3.25rem;
+    }
+
+    .project-links {
+        align-self: center;
+    }
+
+    .preview {
+        aspect-ratio: 2;
+        align-self: center;
+        grid-column: 2;
+        grid-row: 1 / -1;
     }
 }
 
 @media (min-width: 1020px) {
-    .Projects-Section h3 {
-        padding-top: 6.5em;
-        font-size: 36px;
+    .Projects-Section {
+        background-color: yellow;
     }
-
-    .project {
-        height: 100vh;
-        margin-block: 2em;
-    }
-
-    .project-cta {
-        margin-left: 8.8125em;
-    }
-
-    .project-cta h2 {
-        margin-bottom: 1rem;
-        font-size: 8em;
-    }
-
-    .preview {
-        aspect-ratio: 16/9;
-        width: auto;
-        height: 50em;
-        margin-left: 25vw;
-    }
-
-    .cta-links a {
-        margin-right: 2.5em;
-    }
-
-    /*  css for the odd childfren of the projects  */
-
-    .Projects-Section> :nth-child(odd) .preview {
-        margin-right: 25vw;
-    }
-
-    .Projects-Section> :nth-child(odd) .project-cta {
-        margin-right: 8.8125em;
-    }
-
-    .Projects-Section> :nth-child(odd) .cta-links a {
-        margin-left: 2.5em;
-    }
-
-    /*  css for the odd childfren of the projects  */
 }
