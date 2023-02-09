@@ -46,17 +46,9 @@
     justify-content: space-evenly;
 }
 
-@media (min-width: 481px) {
-    .Projects-Section {
-        background-color: red;
-    }
-}
+/* @media (min-width: 481px) {} */
 
 @media (min-width: 769px) {
-    .Projects-Section {
-        background-color: orange;
-    }
-
     .project {
         width: 100%;
     }
@@ -91,7 +83,12 @@
 }
 
 @media (min-width: 1020px) {
-    .Projects-Section {
-        background-color: yellow;
+    .project-content-container {
+        grid-template-columns: minmax(500px, 1fr) minmax(400px, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .project-content-container h2 {
+        font-size: 4.5rem;
     }
 }
