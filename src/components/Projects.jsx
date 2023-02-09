@@ -9,24 +9,6 @@ import './projects.css'
 function Projects({ handleMouseEnter, handleMouseLeave }) {
 
     const projectsArr = [
-        // {
-        //     name: 'the best password generator',
-        //     image: PasswordgeneratorPreview,
-        //     githublink: 'https://github.com/Malal0/PasswordGenerator',
-        //     url: 'https://bestpasswordgenerator.netlify.app/'
-        // },
-        // {
-        //     name: 'Register Count',
-        //     image: RegisterCountPreview,
-        //     githublink: 'https://github.com/Malal0/Register-Count',
-        //     url: 'https://registercount.netlify.app/'
-        // },
-        // {
-        //     name: 'loteria online',
-        //     image: LoteriaPreview,
-        //     githublink: 'https://github.com/Malal0/Loteria',
-        //     url: 'https://loteria-card-generator.netlify.app/'
-        // },
         {
             name: 'invoice creator',
             image: InvoiceCreatorPreview,
