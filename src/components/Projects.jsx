@@ -28,6 +28,12 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
         //     url: 'https://loteria-card-generator.netlify.app/'
         // },
         {
+            name: 'invoice creator',
+            image: InvoiceCreatorPreview,
+            githublink: 'https://github.com/Malal0/Invoice-Creator',
+            url: 'https://invoicecreatorsoloproject.netlify.app/'
+        },
+        {
             name: 'the best password generator',
             image: PasswordgeneratorPreview,
             githublink: 'https://github.com/Malal0/PasswordGenerator',
@@ -38,12 +44,6 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
             image: RegisterCountPreview,
             githublink: 'https://github.com/Malal0/Register-Count',
             url: 'https://registercount.netlify.app/'
-        },
-        {
-            name: 'invoice creator',
-            image: InvoiceCreatorPreview,
-            githublink: 'https://github.com/Malal0/Invoice-Creator',
-            url: 'https://invoicecreatorsoloproject.netlify.app/'
         }
     ]
 
