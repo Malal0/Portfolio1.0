@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import GithubIcon from '../assets/images/githubicon.svg'
 import WeblinkIcon from '../assets/images/weblinkicon.svg'
-import InvoiceCreatorPreview from '../assets/images/invoicecreator.png'
-import PasswordgeneratorPreview from '../assets/images/passwordgenerator.png'
-import RegisterCountPreview from '../assets/images/registercount.png'
+import InvoiceCreatorPreview from '../assets/images/loteriaprev.png'
+import PasswordgeneratorPreview from '../assets/images/passwordgeneratorprev.png'
+import RegisterCountPreview from '../assets/images/registercountprev.png'
 import './projects.css'
 
 function Projects({ handleMouseEnter, handleMouseLeave }) {
@@ -31,7 +31,7 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
 
     const projects = projectsArr.map(item => {
         return (
-            <div className='project' key={projectsArr.indexOf(item)}>
+            <div className='project' key={projectsArr.indexOf(item)} style={{ backgroundImage: `url(${item.image})` }}>
                 <div className='project-content-container'>
                     <img src={item.image} className="preview" alt={`${item.name} preview`} />
                     <h2>{item.name}</h2>
