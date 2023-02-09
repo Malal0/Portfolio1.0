@@ -31,7 +31,7 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
 
     const projects = projectsArr.map(item => {
         return (
-            <div className='project' key={projectsArr.indexOf(item)} style={{ backgroundImage: `url(${item.image})` }}>
+            <div className='project' key={projectsArr.indexOf(item)}>
                 <div className='project-content-container'>
                     <img src={item.image} className="preview" alt={`${item.name} preview`} />
                     <h2>{item.name}</h2>
