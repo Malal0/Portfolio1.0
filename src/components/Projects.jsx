@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import GithubIcon from '../assets/images/githubicon.svg'
 import WeblinkIcon from '../assets/images/weblinkicon.svg'
-import InvoiceCreatorPreview from '../assets/images/loteriaprev.png'
-import PasswordgeneratorPreview from '../assets/images/passwordgeneratorprev.png'
-import RegisterCountPreview from '../assets/images/registercountprev.png'
+import InvoiceCreatorPreview from '../assets/images/invoicecreator.png'
+import PasswordgeneratorPreview from '../assets/images/passwordgenerator.png'
+import RegisterCountPreview from '../assets/images/registercount.png'
 import './projects.css'
 
 function Projects({ handleMouseEnter, handleMouseLeave }) {
