@@ -93,9 +93,11 @@ ul {
 }
 
 .hero-main img {
-    border-radius: 50%;
     aspect-ratio: 1;
-    height: 9.375em;
+    /* border: 8px solid #fff; */
+    border-radius: 50%;
+    height: 10em;
+    object-fit: cover;
 }
 
 .hero-txt {
