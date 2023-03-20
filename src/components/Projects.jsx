@@ -1,31 +1,31 @@
 import React, { useEffect } from 'react'
 import GithubIcon from '../assets/images/githubicon.svg'
 import WeblinkIcon from '../assets/images/weblinkicon.svg'
-import InvoiceCreatorPreview from '../assets/images/invoicecreator.png'
-import PasswordgeneratorPreview from '../assets/images/passwordgenerator.png'
-import RegisterCountPreview from '../assets/images/registercount.png'
+import moviewatchlistbg from '../assets/images/moviewatchlistbg.png'
+import youtubesearchbg from '../assets/images/youtubesearchbg.png'
+import hikefinderbg from '../assets/images/hikefinderbg.png'
 import './projects.css'
 
 function Projects({ handleMouseEnter, handleMouseLeave }) {
 
     const projectsArr = [
         {
-            name: 'invoice creator',
-            image: InvoiceCreatorPreview,
-            githublink: 'https://github.com/Malal0/Invoice-Creator',
-            url: 'https://invoicecreatorsoloproject.netlify.app/'
+            name: 'Movie Watchlist',
+            image: moviewatchlistbg,
+            githublink: 'https://github.com/Malal0/MovieWatchlist',
+            url: 'https://mymovie-watchlist.netlify.app/index.html'
         },
         {
-            name: 'the best password generator',
-            image: PasswordgeneratorPreview,
-            githublink: 'https://github.com/Malal0/PasswordGenerator',
-            url: 'https://bestpasswordgenerator.netlify.app/'
+            name: 'Youtube Channel Search',
+            image: youtubesearchbg,
+            githublink: 'https://github.com/Malal0/YoutubeChannelSearch',
+            url: 'https://youtube-channel-search.netlify.app/'
         },
         {
-            name: 'Register Count',
-            image: RegisterCountPreview,
-            githublink: 'https://github.com/Malal0/Register-Count',
-            url: 'https://registercount.netlify.app/'
+            name: 'hikefinderbg',
+            image: hikefinderbg,
+            githublink: 'https://github.com/Malal0/HikeFinder',
+            url: 'https://hikefinder.netlify.app/'
         }
     ]
 
