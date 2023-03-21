@@ -15,43 +15,27 @@
 
 
 .AboutMe-Section p {
-    font-size: 11px;
-    line-height: 2em;
-    width: calc(100% - 12em);
+    line-height: 2.5;
+    width: 90%;
     margin: auto;
 }
 
 .hobbies ul {
+    line-height: 2.5;
     display: flex;
     flex-flow: column;
     align-items: flex-start;
     gap: 1em;
     width: fit-content;
     margin: auto;
-    font-size: 10px;
 }
 
-@media (min-width: 481px) {
-    .AboutMe-Section p {
-        font-size: 13px;
-    }
-
-    .hobbies ul {
-        font-size: 13px;
-    }
-}
+/* @media (min-width: 481px) {
+} */
 
 @media (min-width: 769px) {
     .AboutMe-Section {
         width: 46.0625em;
-    }
-
-    .AboutMe-Section p {
-        font-size: 14.5px;
-    }
-
-    .hobbies ul {
-        font-size: 14.5px;
     }
 }
 
@@ -62,12 +46,10 @@
     }
 
     .AboutMe-Section p {
-        font-size: 16px;
         width: 100%;
     }
 
     .hobbies ul {
         gap: 1em;
-        font-size: 16px;
     }
 }

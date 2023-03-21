@@ -34,7 +34,7 @@
 .Contact-Section input {
     background-color: var(--dim-white);
     padding: 5px 9px;
-    font-size: 10px;
+    font-size: 16px;
     color: var(--dark-grey);
     outline: none;
     border: 0;
@@ -42,11 +42,13 @@
 
 .Contact-Section label {
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .message-container {
     height: 30vh;
+    padding: 0;
+    display: block;
 }
 
 .message {
@@ -54,10 +56,10 @@
     height: 100%;
     padding: 1em;
     overflow-y: auto;
-    background-color: var(--dim-white);
+    /* background-color: var(--dim-white); */
     color: var(--dark-grey);
     font-family: inherit;
-    font-size: 10px;
+    font-size: 16px;
 }
 
 .buttons-container {
@@ -86,8 +88,8 @@
 }
 
 .buttons-container button {
-    font-size: 12px;
-    padding: 7px 18px;
+    font-size: 16px;
+    padding: .5em 1.5em;
     grid-column: 2;
 }
 
@@ -96,11 +98,56 @@
     outline: none;
     border: none;
     color: var(--dark-grey);
+    background-color: var(--dim-white);
 }
 
 .links a {
     height: var(--logo-size);
     aspect-ratio: 1;
+}
+
+.form {
+    display: grid;
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form-group {
+    width: 100%;
+    /* border: 1px solid rgb(187, 0, 255); */
+}
+
+.form-group:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    display: block;
+    padding: .75em 0;
+    color: var(--dim-white);
+}
+
+.form-group input {
+    padding: 1em;
+    width: 100%;
+}
+
+.form-group.message {
+    /* border: 1px solid plum; */
+    padding: 0;
+    height: fit-content;
+}
+
+.message-container {
+    border: 1px solid greenyellow;
+}
+
+.message-text {
+    width: 100%;
+    height: 20em;
+    padding: 1em;
+    font-family: inherit;
 }
 
 @media (min-width: 481px) {
@@ -110,20 +157,19 @@
     }
 
     .Contact-Section label {
-        font-size: 1.2rem;
+        font-size: 16px;
     }
 
     .message-container {
         height: 40vh;
     }
 
-    .message {
-        padding: 20px;
-        font-size: 14px;
+    .message-text {
+        font-size: 16px;
     }
 
     .buttons-container button {
-        font-size: 14px;
+        font-size: 16px;
         padding: 22px 55px;
     }
 }
@@ -132,6 +178,36 @@
     .buttons-container .links {
         margin-left: 0;
         gap: clamp(1em, 20%, 1.5em);
+    }
+
+    .form {
+        display: grid;
+        grid-template-columns: auto 2em auto;
+        grid-template-rows: auto auto;
+    }
+
+    .form-group.name {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .form-group.email {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .form-group.message {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        /* background-color: var(--dim-white); */
+        /* padding: 0; */
+        /* border: 1px solid peru; */
+    }
+
+    .message-text {
+        padding: 1em;
+        width: 100%;
+        border: 1px saddlebrown solid;
     }
 }
 
@@ -180,5 +256,9 @@
 
     .links a {
         height: var(--logo-size);
+    }
+
+    .message-text {
+        font-size: 24px;
     }
 }

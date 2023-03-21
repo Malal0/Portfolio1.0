@@ -4,11 +4,11 @@ import Hero from './components/Hero'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import AboutMe from './components/AboutMe'
-import MyArtwork from './components/MyArtwork'
+// import MyArtwork from './components/MyArtwork'
 import Contact from './components/Contact'
 import TopOfPageBtn from './components/TopOfPageBtn'
 import './components/cursor.css'
-import './App.css'
+import './index.css'
 import ScreenSize from './components/ScreenSize'
 
 function App() {

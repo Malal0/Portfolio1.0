@@ -13,20 +13,18 @@ function Contact() {
                 action="https://formsubmit.co/josue_mar@protonmail.com"
                 method="POST"
             >
-                <div className='flex-r'>
-                    <div className='flex-c'>
+                <div className='form'>
+                    <div className='form-group name'>
                         <label>full name</label>
                         <input type='text' placeholder='Your Name' id='fullName' name="name" required></input>
                     </div>
-                    <div className='flex-c'>
+                    <div className='form-group email'>
                         <label>email</label>
                         <input type='email' placeholder='Email' id='email' name="email" required></input>
                     </div>
-                </div>
-                <div className='flex-c'>
-                    <label>message</label>
-                    <div className='message-container'>
-                        <textarea className='message' placeholder='Hello Dev!' id='message' name='message'></textarea>
+                    <div className='form-group message'>
+                        <label>message</label>
+                        <textarea className='message-text' placeholder='Hello Dev!' id='message' name='message'></textarea>
                     </div>
                 </div>
                 <input type="hidden" name="_captcha" value="false"></input>
