@@ -49,23 +49,6 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
         )
     })
 
-    // const images = document.querySelectorAll('.preview');
-
-    // function handleImageEnter(e) {
-    //     e.target.previousSibling.firstChild.classList.add('bordered')
-    //     e.target.previousSibling.lastChild.classList.add('bordered')
-    // }
-
-    // function handleImageLeave(e) {
-    //     e.target.previousSibling.firstChild.classList.remove('bordered')
-    //     e.target.previousSibling.lastChild.classList.remove('bordered')
-    // }
-
-    // useEffect(() => {
-    //     images.forEach((image) => image.addEventListener('mouseenter', handleImageEnter));
-    //     images.forEach((image) => image.addEventListener('mouseleave', handleImageLeave));
-    // }, []);
-
     return (
         <div className='Projects-Section'>
             <h3>projects</h3>
