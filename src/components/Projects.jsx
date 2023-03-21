@@ -1,9 +1,9 @@
 // import React, { useEffect } from 'react'
 import GithubIcon from '../assets/images/githubicon.svg'
 import WeblinkIcon from '../assets/images/weblinkicon.svg'
-import moviewatchlistbg from '../assets/images/moviewatchlistbg.png'
-import youtubesearchbg from '../assets/images/youtubesearchbg.png'
-import hikefinderbg from '../assets/images/hikefinderbg.png'
+import movie from '../assets/images/moviewatchlistbg.png'
+import youtube from '../assets/images/youtubesearchbg.png'
+import hike from '../assets/images/hikefinderbg.png'
 import './projects.css'
 
 function Projects({ handleMouseEnter, handleMouseLeave }) {
@@ -11,19 +11,19 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
     const projectsArr = [
         {
             name: 'Movie Watchlist',
-            image: moviewatchlistbg,
+            image: movie,
             githublink: 'https://github.com/Malal0/MovieWatchlist',
             url: 'https://mymovie-watchlist.netlify.app/index.html'
         },
         {
             name: 'Youtube Channel Search',
-            image: youtubesearchbg,
+            image: youtube,
             githublink: 'https://github.com/Malal0/Register-Count',
             url: 'https://youtube-channel-search.netlify.app/'
         },
         {
             name: 'Hike Finder',
-            image: hikefinderbg,
+            image: hike,
             githublink: 'https://github.com/Malal0/HikeFinder',
             url: 'https://hikefinder.netlify.app/'
         }
