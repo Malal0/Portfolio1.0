@@ -5,6 +5,10 @@ function AboutMe() {
 
     const [showMore, setShowMore] = useState(false)
 
+    function handleClick() {
+        setShowMore(prevShow => !prevShow)
+    }
+
     return (
         <div className='AboutMe-Section'>
             <div className='short-desc'>
@@ -24,7 +28,12 @@ function AboutMe() {
             </div>
             <div>
                 <h3>why I chose this career</h3>
-                <p>In 2019, I ventured out to Oklahoma to master the art of Pipefitting. Within just five months, I became a certified NCCER Level 3 expert, ready to kick-start a high-paying career. My teacher even took me under his wing for my very first job, and boy, was it a lucrative one! But before I could even think of my next gig, the world came crashing down with a massive shutdown. Suddenly, everyone was out of work, and I was no exception. I had to rely on my last paycheck for a while, until I found myself moving back in with my parents. That's when I took up a job at a steel manufacturing company, operating forklifts of all shapes and sizes, hauling metal from A to B in sweltering heat, bone-chilling cold, and even relentless rain. The tedious cycle of it all left me yearning for a greater challenge. I had always been intrigued by the world of coding, and decided to take the plunge. Little did I know, I was about to embark on an epic journey of discovery! From not even knowing how to write a simple for loop, I have since gained a wealth of knowledge, built several amazing projects, and the list keeps on growing. My journey in the world of coding has only just begun!</p>
+                {
+                    showMore ?
+                        <p>In 2019, I ventured out to Oklahoma to master the art of Pipefitting. Within just five months, I became a certified NCCER Level 3 expert, ready to kick-start a high-paying career. My teacher even took me under his wing for my very first job, and boy, was it a lucrative one! But before I could even think of my next gig, the world came crashing down with a massive shutdown. Suddenly, everyone was out of work, and I was no exception. I had to rely on my last paycheck for a while, until I found myself moving back in with my parents. That's when I took up a job at a steel manufacturing company, operating forklifts of all shapes and sizes, hauling metal from A to B in sweltering heat, bone-chilling cold, and even relentless rain. The tedious cycle of it all left me yearning for a greater challenge. I had always been intrigued by the world of coding, and decided to take the plunge. Little did I know, I was about to embark on an epic journey of discovery! From not even knowing how to write a simple for loop, I have since gained a wealth of knowledge, built several amazing projects, and the list keeps on growing. My journey in the world of coding has only just begun!</p> :
+                        <p>In 2019, I ventured out to Oklahoma to master the art of Pipefitting. Within just five months, I became a certified NCCER Level 3 expert, ready to kick-start a high-paying career. My teacher even took me under his wing for my very first job, and boy, was it a lucrative one! But before I could even think of my next gig, the world came crashing down with ...</p>
+                }
+                <button className='show-more-btn' onClick={handleClick}>{showMore ? 'show less' : 'show more'}</button>
             </div>
         </div>
     )
