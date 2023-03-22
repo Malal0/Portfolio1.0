@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './about.css'
 
 function AboutMe() {
+
+    const [showMore, setShowMore] = useState(false)
+
     return (
         <div className='AboutMe-Section'>
             <div className='short-desc'>
