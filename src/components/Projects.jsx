@@ -4,6 +4,9 @@ import WeblinkIcon from '../assets/images/weblinkicon.svg'
 import movie from '../assets/images/moviewatchlistbg.png'
 import youtube from '../assets/images/youtubesearchbg.png'
 import hike from '../assets/images/hikefinderbg.png'
+import movieblurred from '../assets/images/moviewatchlistbgblur.png'
+import youtubeblurred from '../assets/images/youtubesearchbgblur.png'
+import hikeblurred from '../assets/images/hikefinderbgblur.png'
 import './projects.css'
 
 function Projects({ handleMouseEnter, handleMouseLeave }) {
@@ -13,25 +16,28 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
             name: 'Movie Watchlist',
             image: movie,
             githublink: 'https://github.com/Malal0/MovieWatchlist',
-            url: 'https://mymovie-watchlist.netlify.app/index.html'
+            url: 'https://mymovie-watchlist.netlify.app/index.html',
+            background: movieblurred
         },
         {
             name: 'Youtube Channel Search',
             image: youtube,
             githublink: 'https://github.com/Malal0/Register-Count',
-            url: 'https://youtube-channel-search.netlify.app/'
+            url: 'https://youtube-channel-search.netlify.app/',
+            background: youtubeblurred
         },
         {
             name: 'Hike Finder',
             image: hike,
             githublink: 'https://github.com/Malal0/HikeFinder',
-            url: 'https://hikefinder.netlify.app/'
+            url: 'https://hikefinder.netlify.app/',
+            background: hikeblurred
         }
     ]
 
     const projects = projectsArr.map(item => {
         return (
-            <div className='project' key={item.image} style={{ backgroundImage: `url(${item.image})` }}>
+            <div className='project' key={item.image} style={{ backgroundImage: `url(${item.background})` }}>
                 <div className='project-content-container'>
                     <img src={item.image} className="preview" alt={`${item.name} preview`} />
                     <h2>{item.name}</h2>
