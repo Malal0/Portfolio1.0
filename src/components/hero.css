@@ -8,22 +8,18 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.3), var(--dark-grey) 100%), var(--image);
     height: 100%;
     width: 100%;
-    background-size: cover;
+    background-size: 200%;
     background-position: center;
     animation: zoomOut 5s;
 }
 
 @keyframes zoomOut {
-    0% {
+    from {
+        background-size: 500%;
+    }
+
+    to {
         background-size: 200%;
-    }
-
-    99% {
-        background-size: 100%;
-    }
-
-    100% {
-        background-size: cover;
     }
 }
 
@@ -157,7 +153,7 @@ ul {
     }
 }
 
-@media (min-width: 481px) {
+/* @media (min-width: 481px) {
     .bg-Image {
         --image: url('../assets/images/bg-tablet-blur5.jpg');
     }
@@ -167,16 +163,16 @@ ul {
     .bg-Image {
         --image: url('../assets/images/bg-laptop-blur16.jpg');
     }
-}
+} */
 
 @media (min-width: 1020px) {
     .Hero-Section {
         height: 43.75em;
     }
 
-    .bg-Image {
+    /* .bg-Image {
         --image: url('../assets/images/bg-blur50.jpg');
-    }
+    } */
 
     .navbar {
         align-items: center;

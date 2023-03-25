@@ -23,7 +23,6 @@
 
 .project-content-container {
     background-color: hsl(0, 0%, 5%, .5);
-    backdrop-filter: blur(15px);
     display: flex;
     flex-direction: column;
     gap: 2em;
