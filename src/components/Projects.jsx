@@ -15,10 +15,10 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
 
     const projectsArr = [
         {
-            name: 'Movie Watchlist',
+            name: 'Winery',
             image: winery,
             githublink: 'https://github.com/Malal0/MovieWatchlist',
-            url: 'https://mymovie-watchlist.netlify.app/index.html',
+            url: 'https://winery54321.netlify.app/',
             background: wineryblurred
         },
         {
