@@ -1,13 +1,11 @@
 // import React, { useEffect } from 'react'
 import GithubIcon from '../assets/images/githubicon.svg'
 import WeblinkIcon from '../assets/images/weblinkicon.svg'
-// import movie from '../assets/images/moviewatchlistbg.png'
 import winery from '../assets/images/winerybg.png'
-import youtube from '../assets/images/youtubesearchbg.png'
+import barbershop from '../assets/images/barbershopbg.png'
 import hike from '../assets/images/hikefinderbg.png'
-// import movieblurred from '../assets/images/moviewatchlistbgblur.png'
 import wineryblurred from '../assets/images/winerybgblur.png'
-import youtubeblurred from '../assets/images/youtubesearchbgblur.png'
+import barbershopblurred from '../assets/images/barbershopbgblur.png'
 import hikeblurred from '../assets/images/hikefinderbgblur.png'
 import './projects.css'
 
@@ -15,18 +13,18 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
 
     const projectsArr = [
         {
-            name: 'Winery',
+            name: 'Martinez Winery',
             image: winery,
             githublink: 'https://github.com/Malal0/MovieWatchlist',
             url: 'https://winery54321.netlify.app/',
             background: wineryblurred
         },
         {
-            name: 'Youtube Channel Search',
-            image: youtube,
+            name: 'Clean Cuts',
+            image: barbershop,
             githublink: 'https://github.com/Malal0/Register-Count',
-            url: 'https://youtube-channel-search.netlify.app/',
-            background: youtubeblurred
+            url: 'https://barbershop54321.netlify.app/',
+            background: barbershopblurred
         },
         {
             name: 'Hike Finder',
