@@ -38,19 +38,12 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
     const projects = projectsArr.map(item => {
         return (
             <div className='project' key={item.image} style={{ backgroundImage: `url(${item.background})` }}>
-                <div className='project-content-container'>
-                    <img src={item.image} className="preview" alt={`${item.name} preview`} />
-                    <h2>{item.name}</h2>
-                    <div className='project-links'>
-                        <a href={item.githublink} target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                            <img src={GithubIcon} className="logo-link" alt="Github link" />
-                        </a>
-                        <a href={item.url} target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                            <img src={WeblinkIcon} className="logo-link" alt="Website link" />
-                        </a>
-                    </div>
-                    <p>Stack: HTML5, CSS, Sass, Javascript, ES6</p>
-                </div >
+                <a href={item.url} target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                    <div className='project-content-container'>
+                        <img src={item.image} className="preview" alt={`${item.name} preview`} />
+                        <h2>{item.name}</h2>
+                    </div >
+                </a>
             </div>
         )
     })

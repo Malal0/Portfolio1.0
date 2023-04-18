@@ -45,6 +45,15 @@
     justify-content: space-evenly;
 }
 
+.project-content-container .preview {
+    border: 2px solid transparent;
+}
+
+.project-content-container:hover .preview {
+    border: 2px solid white;
+    box-shadow: 0 0 10px white;
+}
+
 /* @media (min-width: 481px) {} */
 
 @media (min-width: 769px) {
@@ -56,6 +65,12 @@
         display: grid;
         grid-template-columns: minmax(300px, 1fr) auto;
         grid-template-rows: repeat(3, auto);
+        align-items: center;
+    }
+
+    .project-content-container h2 {
+        /* align-content: center; */
+        grid-row: 2;
     }
 
     .project-content-container h2,
