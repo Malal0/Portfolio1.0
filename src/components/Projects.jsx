@@ -3,10 +3,10 @@ import GithubIcon from '../assets/images/githubicon.svg'
 import WeblinkIcon from '../assets/images/weblinkicon.svg'
 import winery from '../assets/images/winerybg.png'
 import barbershop from '../assets/images/barbershopbg.png'
-import hike from '../assets/images/hikefinderbg.png'
+import donutempire from '../assets/images/donutempirebg.png'
 import wineryblurred from '../assets/images/winerybgblur.png'
 import barbershopblurred from '../assets/images/barbershopbgblur.png'
-import hikeblurred from '../assets/images/hikefinderbgblur.png'
+import donutempireblurred from '../assets/images/donutempirebgblur.png'
 import './projects.css'
 
 function Projects({ handleMouseEnter, handleMouseLeave }) {
@@ -15,23 +15,20 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
         {
             name: 'Martinez Winery',
             image: winery,
-            githublink: 'https://github.com/Malal0/MovieWatchlist',
             url: 'https://winery54321.netlify.app/',
             background: wineryblurred
         },
         {
             name: 'Clean Cuts',
             image: barbershop,
-            githublink: 'https://github.com/Malal0/Register-Count',
             url: 'https://barbershop54321.netlify.app/',
             background: barbershopblurred
         },
         {
-            name: 'Hike Finder',
-            image: hike,
-            githublink: 'https://github.com/Malal0/HikeFinder',
-            url: 'https://hikefinder.netlify.app/',
-            background: hikeblurred
+            name: 'Donut Empire',
+            image: donutempire,
+            url: 'https://donutempire.netlify.app/',
+            background: donutempireblurred
         }
     ]
 
