@@ -39,6 +39,7 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
                     <div className='project-content-container'>
                         <img src={item.image} className="preview" alt={`${item.name} preview`} />
                         <h2>{item.name}</h2>
+                        <p>click me</p>
                     </div >
                 </a>
             </div>
