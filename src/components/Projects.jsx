@@ -1,12 +1,12 @@
 // import React, { useEffect } from 'react'
 import GithubIcon from '../assets/images/githubicon.svg'
 import WeblinkIcon from '../assets/images/weblinkicon.svg'
-import winery from '../assets/images/winerybg.png'
-import barbershop from '../assets/images/barbershopbg.png'
-import donutempire from '../assets/images/donutempirebg.png'
-import wineryblurred from '../assets/images/winerybgblur.png'
-import barbershopblurred from '../assets/images/barbershopbgblur.png'
-import donutempireblurred from '../assets/images/donutempirebgblur.png'
+import winery from 'winerybg.png'
+import barbershop from 'barbershopbg.png'
+import donutempire from 'donutempirebg.png'
+import wineryblurred from 'winerybgblur.png'
+import barbershopblurred from 'barbershopbgblur.png'
+import donutempireblurred from 'donutempirebgblur.png'
 import './projects.css'
 
 function Projects({ handleMouseEnter, handleMouseLeave }) {
@@ -34,7 +34,7 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
 
     const projects = projectsArr.map(item => {
         return (
-            <div className='project' key={item.image} style={{ backgroundImage: `url(${item.background})` }}>
+            <div className='project' key={item.image} style={{ backgroundImage: `url(../assets/images/${item.background})` }}>
                 <a href={item.url} target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     <div className='project-content-container'>
                         <img src={item.image} className="preview" alt={`${item.name} preview`} />
