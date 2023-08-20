@@ -37,6 +37,14 @@ function Skills() {
             name: 'figma',
             image: Figmalogo
         },
+        {
+            name: 'php',
+            image: Phplogo
+        },
+        {
+            name: 'wordpress',
+            image: Wordpresslogo
+        },
     ];
 
     const skillsHtml = skillsArr.map(skill => {
