@@ -13,10 +13,22 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
 
     const projectsArr = [
         {
-            name: 'name',
-            image: image_name,
+            name: 'chili dippers',
+            image: cd,
             url: 'url_line',
-            background: image_blurred
+            background: cdblurred
+        },
+        {
+            name: 'the maze of hochatown',
+            image: moh,
+            url: 'url_line',
+            background: mohblurred
+        },
+        {
+            name: 'Theatre Longview',
+            image: tl,
+            url: 'url_line',
+            background: tlblurred
         },
     ]
 

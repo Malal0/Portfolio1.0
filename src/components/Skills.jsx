@@ -9,34 +9,52 @@ import Blenderlogo from '../assets/images/blenderlogo.png'
 import './skills.css'
 
 function Skills() {
+
+    const skillsArr = [
+        {
+            name: 'html',
+            image: Htmllogo
+        },
+        {
+            name: 'css',
+            image: Csslogo
+        },
+        {
+            name: 'javascript',
+            image: Javascriptlogo
+        },
+        {
+            name: 'photoshop',
+            image: Photoshoplogo
+        },
+        {
+            name: 'react',
+            image: Reactlogo
+        },
+        {
+            name: 'figma',
+            image: Figmalogo
+        }
+    ];
+
+    const skillsHtml = skillsArr.map(skill => {
+        const { name, image } = skill;
+
+        return (
+            <div className='skill'>
+                <img src={image} alt={`${name} logo`} />
+                <p>{name}</p>
+            </div>
+        )
+    });
+
     return (
         <div className='Skills-Section'>
             <h3>skills</h3>
             <div className='skills-container'>
-                <div className='skill'>
-                    <img src={Htmllogo} alt="Html logo" />
-                    <p>html</p>
-                </div>
-                <div className='skill'>
-                    <img src={Csslogo} alt="Css logo" />
-                    <p>css</p>
-                </div>
-                <div className='skill'>
-                    <img src={Javascriptlogo} alt="Javascript logo" />
-                    <p>javascript</p>
-                </div>
-                <div className='skill'>
-                    <img src={Photoshoplogo} alt="Photoshop logo" />
-                    <p>photoshop</p>
-                </div>
-                <div className='skill'>
-                    <img src={Reactlogo} alt="React logo" />
-                    <p>react</p>
-                </div>
-                <div className='skill'>
-                    <img src={Figmalogo} alt="Figma logo" />
-                    <p>figma</p>
-                </div>
+
+                {skillsHtml}
+
             </div>
         </div>
     )
