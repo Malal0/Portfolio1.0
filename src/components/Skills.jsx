@@ -5,6 +5,8 @@ import Javascriptlogo from '../assets/images/javascriptlogo.png'
 import Photoshoplogo from '../assets/images/photoshoplogo.png'
 import Reactlogo from '../assets/images/reactlogo.png'
 import Figmalogo from '../assets/images/figmalogo.png'
+import Phplogo from '../assets/images/phplogo.png'
+import Wordpresslogo from '../assets/images/wordpresslogo.png'
 import Blenderlogo from '../assets/images/blenderlogo.png'
 import './skills.css'
 
@@ -34,7 +36,7 @@ function Skills() {
         {
             name: 'figma',
             image: Figmalogo
-        }
+        },
     ];
 
     const skillsHtml = skillsArr.map(skill => {
