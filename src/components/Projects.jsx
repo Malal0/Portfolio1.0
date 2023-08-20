@@ -1,35 +1,23 @@
 // import React, { useEffect } from 'react'
 import GithubIcon from '../assets/images/githubicon.svg'
 import WeblinkIcon from '../assets/images/weblinkicon.svg'
-import winery from '../assets/images/winerybg.png'
-import barbershop from '../assets/images/barbershopbg.png'
-import donutempire from '../assets/images/donutempirebg.png'
-import wineryblurred from '../assets/images/winerybgblur.png'
-import barbershopblurred from '../assets/images/barbershopbgblur.png'
-import donutempireblurred from '../assets/images/donutempirebgblur.png'
+import cd from '../assets/images/cd.png'
+import cdblurred from '../assets/images/cd-blur.png'
+import moh from '../assets/images/moh.png'
+import mohblurred from '../assets/images/moh-blur.png'
+import tl from '../assets/images/tl.png'
+import tlblurred from '../assets/images/tl-blur.png'
 import './projects.css'
 
 function Projects({ handleMouseEnter, handleMouseLeave }) {
 
     const projectsArr = [
         {
-            name: 'Martinez Winery',
-            image: winery,
-            url: 'https://winery54321.netlify.app/',
-            background: wineryblurred
+            name: 'name',
+            image: image_name,
+            url: 'url_line',
+            background: image_blurred
         },
-        {
-            name: 'Clean Cuts',
-            image: barbershop,
-            url: 'https://barbershop54321.netlify.app/',
-            background: barbershopblurred
-        },
-        {
-            name: 'Donut Empire',
-            image: donutempire,
-            url: 'https://donutempire.netlify.app/',
-            background: donutempireblurred
-        }
     ]
 
     const projects = projectsArr.map(item => {
