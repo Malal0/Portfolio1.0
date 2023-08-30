@@ -70,7 +70,7 @@ function Hero({ handleMouseEnter, handleMouseLeave, width }) {
             </div >
             <div className='scrolldown'>
                 <p>(scroll down)</p>
-                <img src={Arrow}></img>
+                <img src={Arrow} alt="scroll-to-top-btn"></img>
             </div>
         </div >
     )
