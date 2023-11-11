@@ -2,10 +2,10 @@ import React from 'react'
 // import { motion } from 'framer-motion'
 // import Logo from '../assets/images/JEM-Logo.svg'
 // import ProPic from '../assets/images/ProfilePic.png'
-import ProPic from '../assets/images/profile-pic.png'
+import ProPic from '../images/profile-pic.png'
 // import MenuBtn from '../assets/images/Menu-btn-alt.svg'
-import Arrow from '../assets/images/Arrow.svg'
-import './hero.css'
+import Arrow from '../images/Arrow.svg'
+import '../styles/css/hero.css'
 
 function Hero({ handleMouseEnter, handleMouseLeave, width }) {
     const link = 'https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg?auto=compress&cs=tinysrgb&w=300';

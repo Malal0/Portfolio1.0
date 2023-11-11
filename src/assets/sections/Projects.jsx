@@ -7,6 +7,7 @@ import moh from '../../assets/images/moh.png'
 import mohblurred from '../../assets/images/moh-blur.png'
 import tl from '../../assets/images/tl.png'
 import tlblurred from '../../assets/images/tl-blur.png'
+import Project from '../components/Project'
 import '../../assets/styles/css/projects.css'
 
 function Projects({ handleMouseEnter, handleMouseLeave }) {
@@ -16,38 +17,26 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
             name: 'chili dippers',
             image: cd,
             url: 'https://chilidippers.com/',
-            background: cdblurred
+            background: cdblurred,
+            gradient: 'linear-gradient(151deg, rgba(244, 184, 111, 0.90) 7.69%, rgba(27, 113, 130, 0.90) 91.72%)'
         },
         {
             name: 'the maze of hochatown',
             image: moh,
             url: 'https://themazeofhochatown.com/',
-            background: mohblurred
+            background: mohblurred,
+            gradient: ' linear-gradient(329deg, rgba(229, 219, 182, 0.90) 6%, rgba(164, 74, 44, 0.90) 91%)'
         },
         {
             name: 'Theatre Longview',
             image: tl,
             url: 'https://theatrelongview.com/',
-            background: tlblurred
+            background: tlblurred,
+            gradient: 'linear-gradient(155deg, rgba(254, 241, 0, 0.90) 8.19%, rgba(253, 20, 210, 0.90) 91.18%)'
         },
     ]
 
-    const projects = projectsArr.map(item => {
-        return (
-            <>
-                <a href={item.url} target="_blank" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                    <div className="work-box" style={{ backgroundImage: `${item.image}` }}>
-                        <div className="box-color" style={{ backgroundColor: 'hsla(18, 100%, 57%, .9)' }}>
-                            <div className="box-content">
-                                <p className="title">{item.name}</p>
-                                <p className="tags">stack used for this project</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </>
-        )
-    })
+    const projects = projectsArr.map(item => <Project {...item} handleMouseEnter={handleMouseEnter} handleMouseLeave={handleMouseLeave} />)
 
     // const images = document.querySelectorAll('.preview');
 
@@ -68,9 +57,11 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
 
     return (
         <div className='Projects-Section'>
-            <h3>projects</h3>
-            <div class="Projects-container">
-                {projects}
+            <div className='jm-container'>
+                <h3>projects</h3>
+                <div class="Projects-container">
+                    {projects}
+                </div>
             </div>
         </div>
     )

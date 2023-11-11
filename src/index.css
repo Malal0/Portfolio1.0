@@ -152,6 +152,13 @@ img {
   width: var(--logo-size);
 }
 
+.jm-container {
+  min-width: 100px;
+  width: calc(100% - 32px);
+  max-width: 1080px;
+  margin-inline: auto;
+}
+
 /* .lightmode {
   :root {
     color: var(--dark-grey);

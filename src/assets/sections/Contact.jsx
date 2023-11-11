@@ -1,8 +1,8 @@
 import React from 'react'
-import GithubIcon from '../assets/images/githubicon.svg'
-import LinkedinIcon from '../assets/images/linkedinlogo.svg'
-import PhoneIcon from '../assets/images/phoneicon.svg'
-import './contact.css'
+import GithubIcon from '../images/githubicon.svg'
+import LinkedinIcon from '../images/linkedinlogo.svg'
+import PhoneIcon from '../images/phoneicon.svg'
+import '../styles/css/contact.css'
 
 function Contact() {
 

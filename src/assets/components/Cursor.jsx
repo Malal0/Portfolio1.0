@@ -1,5 +1,5 @@
 import React from 'react'
-import './cursor.css'
+import '../styles/css/cursor.css'
 
 function Cursor() {
     return (

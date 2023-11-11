@@ -6,7 +6,7 @@ import Skills from './assets/sections/Skills'
 import AboutMe from './assets/sections/AboutMe'
 import Contact from './assets/sections/Contact'
 import TopOfPageBtn from './assets/components/TopOfPageBtn'
-import './assets/components/cursor.css'
+import './assets/styles/css/cursor.css'
 import './index.css'
 import ScreenSize from './assets/components/ScreenSize'
 

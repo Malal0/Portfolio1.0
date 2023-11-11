@@ -1,6 +1,6 @@
 import React from 'react'
-import ToTopIcon from '../assets/images/toppagebtn.svg'
-import ToTopIconHover from '../assets/images/toppagebtnhover.svg'
+import ToTopIcon from '../images/toppagebtn.svg'
+import ToTopIconHover from '../images/toppagebtnhover.svg'
 
 
 function TopOfPageBtn({ handleMouseEnter, handleMouseLeave, icon }) {

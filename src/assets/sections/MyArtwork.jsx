@@ -1,9 +1,9 @@
-import React from 'react'
-import Logo from '../assets/images/JEM-Logo.svg'
-import ProPic from '../assets/images/ProfilePic.png'
-import GithubIcon from '../assets/images/githubicon.svg'
-import WeblinkIcon from '../assets/images/weblinkicon.svg'
-import './myartwork.css'
+// import React from 'react'
+import Logo from '../images/JEM-Logo.svg'
+import ProPic from '../images/ProfilePic.png'
+import GithubIcon from '../images/githubicon.svg'
+import WeblinkIcon from '../images/weblinkicon.svg'
+import '../styles/css/myartwork.css'
 
 function MyArtwork() {
     return (
