@@ -146,11 +146,6 @@ function App() {
         </> :
         ""
       }
-
-      <ScreenSize
-        width={windowDimenion.winWidth}
-        height={windowDimenion.winHeight}
-      />
     </div>
   )
 }
