@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import Hero from './components/Hero'
-import Projects from './components/Projects'
-import Skills from './components/Skills'
-import AboutMe from './components/AboutMe'
-import Contact from './components/Contact'
-import TopOfPageBtn from './components/TopOfPageBtn'
-import './components/cursor.css'
+import Hero from './assets/sections/Hero'
+import Projects from './assets/sections/Projects'
+import Skills from './assets/sections/Skills'
+import AboutMe from './assets/sections/AboutMe'
+import Contact from './assets/sections/Contact'
+import TopOfPageBtn from './assets/components/TopOfPageBtn'
+import './assets/components/cursor.css'
 import './index.css'
-import ScreenSize from './components/ScreenSize'
+import ScreenSize from './assets/components/ScreenSize'
 
 function App() {
   //cursor code here
