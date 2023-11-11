@@ -58,7 +58,10 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
     return (
         <div className='Projects-Section'>
             <div className='jm-container'>
-                <h3>projects</h3>
+                <div className='text-content'>
+                    <h3>projects</h3>
+                    <p>These websites were made with HTML, CSS, Javascript, PHP and Wordpress</p>
+                </div>
                 <div class="Projects-container">
                     {projects}
                 </div>

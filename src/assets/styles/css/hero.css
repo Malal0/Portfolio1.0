@@ -4,7 +4,7 @@
 }
 
 .bg-Image {
-    --image: url('../assets/images/bg-smartphone-blur4.jpg');
+    --image: url('../../images/bg-smartphone-blur4.jpg');
     background-image: linear-gradient(rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.3), var(--dark-grey) 100%), var(--image);
     height: 100%;
     width: 100%;

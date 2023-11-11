@@ -1,6 +1,13 @@
 .Projects-Section {
     // min-height: 100vh;
     margin-block: 3em;
+    text-align: center;
+
+    .text-content {
+        h3 {
+            padding-bottom: .25em;
+        }
+    }
 
     .Projects-container {
         display: flex;
@@ -9,45 +16,55 @@
         gap: 4vw;
         margin-top: 2em;
 
-        a {
-            .project-box {
+        // a {
+        .project-box {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+
+            position: relative;
+
+            .box-color {
+                height: 100%;
                 width: 100%;
-                aspect-ratio: 16 / 9;
-                background-position: center;
-                background-size: cover;
-                overflow: hidden;
+                display: grid;
+                place-content: center;
+                // transform: translateY(100%);
+                transition: 250ms ease-in-out;
+                backdrop-filter: blur(3px);
 
-                .box-color {
-                    height: 100%;
-                    width: 100%;
-                    display: grid;
-                    place-content: center;
-                    transform: translateY(100%);
-                    transition: 250ms ease-in-out;
-                    backdrop-filter: blur(3px);
+                height: 20%;
+                position: absolute;
+                bottom: 0;
 
-                    .box-content {
-                        transform: translateY(100%);
-                        transition: transform 600ms ease-in-out;
-                        text-align: center;
-                    }
-                }
-            }
+                .box-content {
+                    // transform: translateY(100%);
+                    transition: transform 600ms ease-in-out;
 
-            &:hover {
-                .project-box {
-
-                    .box-color {
-                        transform: translateY(0%);
-
-                        .box-content {
-                            transform: translateY(0%);
-                        }
+                    .title {
+                        font-weight: 900;
+                        // font-size: ;
                     }
                 }
             }
         }
+
+        .active.project-box {
+
+            .box-color {
+                height: 100%;
+                transform: translateY(0%);
+
+                .box-content {
+                    transform: translateY(0%);
+                }
+            }
+        }
     }
+
+    // }
 }
 
 /* @media (min-width: 410px) {} */
