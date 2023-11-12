@@ -90,7 +90,7 @@ function App() {
 
   //code for screen size
 
-  const [windowDimenion, detectHW] = useState({
+  const [windowDimension, detectHW] = useState({
     winWidth: window.innerWidth,
     winHeight: window.innerHeight,
   })
@@ -108,7 +108,7 @@ function App() {
     return () => {
       window.removeEventListener('resize', detectSize)
     }
-  }, [windowDimenion])
+  }, [windowDimension])
 
   //code for screen size
 
@@ -117,11 +117,12 @@ function App() {
       <Hero
         handleMouseEnter={linkEnter}
         handleMouseLeave={linkLeave}
-        width={windowDimenion.winWidth}
+        width={windowDimension.winWidth}
       />
       <Projects
         handleMouseEnter={linkEnter}
         handleMouseLeave={linkLeave}
+        handleWidth={windowDimension.winWidth}
       />
       <Skills />
       <AboutMe />
@@ -131,7 +132,7 @@ function App() {
         handleMouseLeave={toTopLeave}
         icon={topBtnHover}
       />
-      {windowDimenion.winWidth > 1020 ?
+      {windowDimension.winWidth > 1020 ?
         <>
           <motion.div
             className='Cursor-outer'

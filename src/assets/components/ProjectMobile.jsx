@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export default function Project({ url, image, name, gradient, handleMouseEnter, handleMouseLeave }) {
+export default function ProjectMobile({ url, image, name, gradient, handleMouseEnter, handleMouseLeave }) {
     const [isActive, setIsActive] = useState(false);
     const currentClass = isActive ? 'active' : '';
     // const boxContentHtml = ;
@@ -23,7 +23,7 @@ export default function Project({ url, image, name, gradient, handleMouseEnter, 
                     isActive ?
                         <div className="box-content">
                             <a href={url} target="_blank">
-                                <p className="title">{name}</p>
+                                <p className="title">{name}<i class="jm-icon fa-solid fa-arrow-up-right-from-square"></i></p>
                             </a>
                         </div>
                         :

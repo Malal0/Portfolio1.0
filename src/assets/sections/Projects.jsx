@@ -7,12 +7,13 @@ import moh from '../../assets/images/moh.png'
 import mohblurred from '../../assets/images/moh-blur.png'
 import tl from '../../assets/images/tl.png'
 import tlblurred from '../../assets/images/tl-blur.png'
-import Project from '../components/Project'
+import ProjectMobile from '../components/ProjectMobile'
+import ProjectDesktop from '../components/ProjectDesktop'
 import '../../assets/styles/css/projects.css'
 
-function Projects({ handleMouseEnter, handleMouseLeave }) {
+function Projects({ handleMouseEnter, handleMouseLeave, handleWidth }) {
 
-    const projectsArr = [
+    const prevWorkArr = [
         {
             name: 'chili dippers',
             image: cd,
@@ -36,7 +37,11 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
         },
     ]
 
-    const projects = projectsArr.map(item => <Project {...item} handleMouseEnter={handleMouseEnter} handleMouseLeave={handleMouseLeave} />)
+    const prevWork = prevWorkArr.map(item => {
+        return handleWidth < 1020 ?
+            <ProjectMobile {...item} handleMouseEnter={handleMouseEnter} handleMouseLeave={handleMouseLeave} handleWidth={handleWidth} /> :
+            <ProjectDesktop {...item} handleMouseEnter={handleMouseEnter} handleMouseLeave={handleMouseLeave} handleWidth={handleWidth} />
+    })
 
     // const images = document.querySelectorAll('.preview');
 
@@ -59,11 +64,11 @@ function Projects({ handleMouseEnter, handleMouseLeave }) {
         <div className='Projects-Section'>
             <div className='jm-container'>
                 <div className='text-content'>
-                    <h3>projects</h3>
+                    <h3>Previous work</h3>
                     <p>These websites were made with HTML, CSS, Javascript, PHP and Wordpress</p>
                 </div>
                 <div class="Projects-container">
-                    {projects}
+                    {prevWork}
                 </div>
             </div>
         </div>
