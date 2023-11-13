@@ -43,15 +43,15 @@ function Projects({ handleMouseEnter, handleMouseLeave, handleWidth }) {
         },
         {
             name: 'Invoice Creator',
-            image: qz,
+            image: ic,
             url: 'https://invoicecreatorsoloproject.netlify.app/',
             gradient: ' linear-gradient(329deg, hsla(221.21,83.49%,57.25%, .9) 6%, hsl(253.85,6.1%,58.24%, .9) 91%)'
         },
         {
             name: 'Quizlet',
-            image: ic,
+            image: qz,
             url: 'https://quizlet-jm.netlify.app/',
-            gradient: 'linear-gradient(155deg, hsla(229.63,34.47%,46.08%, .9) 8.19%, hsla(230.32,60.78%,90%, .9) 91.18%)'
+            gradient: 'linear-gradient(155deg, rgba(145, 54, 4, .9) 8.19%, rgba(79, 103, 55, .9) 91.18%)'
         },
     ]
 
