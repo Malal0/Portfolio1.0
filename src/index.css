@@ -159,6 +159,10 @@ img {
   margin-inline: auto;
 }
 
+.jm-icon {
+  margin-left: .5em;
+}
+
 /* .lightmode {
   :root {
     color: var(--dark-grey);

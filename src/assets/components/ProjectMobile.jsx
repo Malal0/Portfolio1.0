@@ -28,7 +28,7 @@ export default function ProjectMobile({ url, image, name, gradient, handleMouseE
                         </div>
                         :
                         <div className="box-content">
-                            <p className="title">{name}</p>
+                            <p className="title">{name}<i class="jm-icon fa-solid fa-angles-up"></i></p>
                         </div>
                 }
             </div>
